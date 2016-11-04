@@ -6,7 +6,7 @@ using System.Timers;
 public class Move : MonoBehaviour {
 	public bool isGround;
 	public bool goingUp; // true going up, false going down
-	public float jumpDelay = 0.1f; // stop fast double jumps
+	public float jumpDelay = 0.3f; // stop fast double jumps
 	public float inactiveTime; // if action time is less than this time, can't do action
 	public float actionTime;
 	public float rayDistance = 0.1f; // distance center to ground
@@ -44,14 +44,29 @@ public class Move : MonoBehaviour {
 	void Update () 
 	{
 		Jump ();
-		transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime;
+		if (Input.GetAxis ("Vertical") < 0) {
+			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime / 2;
+		} else {
+			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime;
+		}
 		if (Input.GetAxis ("Horizontal") > 0) {
+			if (Input.GetAxis ("Vertical") < 0) {
+				animator.SetInteger ("Crouched", 1);
+			}
 			animator.SetBool("Walking",true);
 			transform.rotation = new Quaternion (0, -90, 0, 90);
 		} else if (Input.GetAxis ("Horizontal") < 0) {
+			if (Input.GetAxis ("Vertical") < 0) {
+				animator.SetInteger ("Crouched", -1);
+			}
 			animator.SetBool("Walking",true);
 			transform.rotation = new Quaternion (0, 90, 0, 90);
 		} else{
+			if (Input.GetAxisRaw ("Vertical") < 0) {
+				animator.SetInteger ("Crouched", 3);
+			} else {
+				animator.SetInteger ("Crouched", 0);
+			}
 			animator.SetBool("Walking",false);
 		}
 	}
