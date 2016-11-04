@@ -18,11 +18,11 @@ public class Elysio : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	void FixedUpdate () {
+	void Update () {
 		transform.localPosition += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime;
 		if (Input.GetAxis ("Horizontal") != 0) {
 			animator.SetBool("Walking",true);
-		} else {
+		} else{
 			animator.SetBool("Walking",false);
 		}
 	}
