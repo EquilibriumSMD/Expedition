@@ -1,0 +1,1937 @@
+fileFormatVersion: 2
+guid: 6a006820f66342d49bc9b694c419f31e
+timeCreated: 1478278923
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Balustrade_001
+    100002: Balustrade_002
+    100004: Balustrade_003
+    100006: Balustrade_004
+    100008: Balustrade_005
+    100010: Balustrade_006
+    100012: Balustrade_007
+    100014: Balustrade_008
+    100016: Balustrade_009
+    100018: Balustrade_010
+    100020: Balustrade_011
+    100022: Balustrade_012
+    100024: BANK OF NEW ZEAL_001
+    100026: BANK OF NEW ZEAL_002
+    100028: Bank of New Zealand_001
+    100030: Bank of New Zealand_002
+    100032: Colummn#1_001
+    100034: Colummn#1_002
+    100036: Colummn#1_003
+    100038: Colummn#1_004
+    100040: Colummn#1_005
+    100042: Colummn#1_006
+    100044: Colummn#1_007
+    100046: Colummn#1_008
+    100048: Component#1_001
+    100050: Component#1_002
+    100052: Component#1_003
+    100054: Component#1_004
+    100056: Component#1_005
+    100058: Component#1_006
+    100060: Component#1_007
+    100062: Component#1_008
+    100064: Component#1_009
+    100066: Component#1_010
+    100068: Component#1_011
+    100070: Component#1_012
+    100072: Component#1_013
+    100074: Component#1_014
+    100076: Component#1_015
+    100078: Component#1_016
+    100080: Component#1_017
+    100082: Component#1_018
+    100084: Component#1_019
+    100086: Component#1_020
+    100088: Component#1_021
+    100090: Component#1_022
+    100092: Component#1_023
+    100094: Component#1_024
+    100096: Component#1_025
+    100098: Component#1_026
+    100100: Component#1_027
+    100102: Component#1_028
+    100104: Component#1_029
+    100106: Component#1_030
+    100108: Component#1_031
+    100110: Component#1_032
+    100112: Component#1_033
+    100114: Component#1_034
+    100116: Component#1_035
+    100118: Component#1_036
+    100120: Component#1_037
+    100122: Component#1_038
+    100124: Component#1_039
+    100126: Component#1_040
+    100128: Component#1_041
+    100130: Component#1_042
+    100132: Component#1_043
+    100134: Component#1_044
+    100136: Component#1_045
+    100138: Component#1_046
+    100140: Component#1_047
+    100142: Component#1_048
+    100144: Component#1_049
+    100146: Component#1_050
+    100148: Component#1_051
+    100150: Component#1_052
+    100152: Component#1_053
+    100154: Component#1_054
+    100156: Component#1_055
+    100158: Component#1_056
+    100160: Component#1_057
+    100162: Component#1_058
+    100164: Component#1_059
+    100166: Component#1_060
+    100168: Component#1_061
+    100170: Component#1_062
+    100172: Component#1_063
+    100174: Component#1_064
+    100176: Corinthian Colummn_001
+    100178: Corinthian Colummn_002
+    100180: Corinthian Colummn_003
+    100182: Corinthian Colummn_004
+    100184: Corinthian Colummn_005
+    100186: Corinthian Colummn_006
+    100188: Corinthian Colummn_007
+    100190: Corinthian Colummn_008
+    100192: Curved Ornament_001
+    100194: Curved Ornament_002
+    100196: Curved Ornament_003
+    100198: Curved Ornament_004
+    100200: Curved Ornament_005
+    100202: Curved Ornament_006
+    100204: Curved Ornament_007
+    100206: Curved Ornament_008
+    100208: Curved Ornament_009
+    100210: Curved Ornament_010
+    100212: Curved Ornament_011
+    100214: Curved Ornament_012
+    100216: Curved Ornament_013
+    100218: Curved Ornament_014
+    100220: Curved Ornament_015
+    100222: Curved Ornament_016
+    100224: Curved Ornament_017
+    100226: Curved Ornament_018
+    100228: Curved Ornament_019
+    100230: Curved Ornament_020
+    100232: Curved Ornament_021
+    100234: Curved Ornament_022
+    100236: Curved Ornament_023
+    100238: Curved Ornament_024
+    100240: Group_001
+    100242: Group_002
+    100244: Group_003
+    100246: Group_004
+    100248: Group_005
+    100250: Group_006
+    100252: Group_007
+    100254: Group_008
+    100256: Group_009
+    100258: Group_010
+    100260: Group_011
+    100262: Group_012
+    100264: Group_013
+    100266: Group_014
+    100268: Group_015
+    100270: Group_016
+    100272: Group_017
+    100274: Group_018
+    100276: Group_019
+    100278: Group_020
+    100280: Group_021
+    100282: Group_022
+    100284: Group_023
+    100286: Group_024
+    100288: Group_025
+    100290: Group_026
+    100292: Group_027
+    100294: Group_028
+    100296: Group_029
+    100298: Group_030
+    100300: Group_031
+    100302: Group_032
+    100304: Group_033
+    100306: Group_034
+    100308: Group_035
+    100310: Group_036
+    100312: Group_037
+    100314: Group_038
+    100316: Group_039
+    100318: Group_040
+    100320: Group_041
+    100322: Group_042
+    100324: Group_043
+    100326: Group_044
+    100328: Group_045
+    100330: Group_046
+    100332: Group_047
+    100334: Group_048
+    100336: Group_049
+    100338: Group_050
+    100340: Group_051
+    100342: Group_052
+    100344: Group_053
+    100346: Group_054
+    100348: Group_055
+    100350: Group_056
+    100352: Group_057
+    100354: Group_058
+    100356: Group_059
+    100358: Group_060
+    100360: Group_061
+    100362: Group_062
+    100364: Group_063
+    100366: Group_064
+    100368: Group_065
+    100370: Group_066
+    100372: Group_067
+    100374: Group_068
+    100376: Group_069
+    100378: Group_070
+    100380: Group_071
+    100382: Group_072
+    100384: Group_073
+    100386: Group_074
+    100388: Group_075
+    100390: Group_076
+    100392: Group_077
+    100394: Group_078
+    100396: Group_079
+    100398: Group_080
+    100400: Group_081
+    100402: Group_082
+    100404: Group_083
+    100406: Group_084
+    100408: Group_085
+    100410: Group_086
+    100412: Group_087
+    100414: Group_088
+    100416: Group_089
+    100418: Group_090
+    100420: Group_091
+    100422: Group_092
+    100424: Group_093
+    100426: Group_094
+    100428: Group_095
+    100430: Group_096
+    100432: Group_097
+    100434: Group_098
+    100436: Group_099
+    100438: Group_100
+    100440: Group_101
+    100442: Group_102
+    100444: Group_103
+    100446: Group_104
+    100448: Group_105
+    100450: Group_106
+    100452: Group_107
+    100454: Group_108
+    100456: Group_109
+    100458: Group_110
+    100460: Group_111
+    100462: Group_112
+    100464: Group_113
+    100466: Group_114
+    100468: Group_115
+    100470: Group_116
+    100472: Group_117
+    100474: Group_118
+    100476: Group_119
+    100478: Group_120
+    100480: Parliament Ornament 1_001
+    100482: Parliament Ornament 1_002
+    100484: Parliament Ornament 1_003
+    100486: Parliament Ornament 1_004
+    100488: Parliament Ornament 1_005
+    100490: Parliament Ornament 1_006
+    100492: Parliament Ornament 1_007
+    100494: Parliament Ornament 1_008
+    100496: Parliament Ornament 1_009
+    100498: Parliament Ornament 1_010
+    100500: Parliament Ornament 1_011
+    100502: Parliament Ornament 1_012
+    100504: Vase Balustrade_001
+    100506: Vase Balustrade_002
+    100508: Vase Balustrade_003
+    100510: Vase Balustrade_004
+    100512: Vase Balustrade_005
+    100514: Vase Balustrade_006
+    100516: Vase Balustrade_007
+    100518: Vase Balustrade_008
+    100520: Vase Balustrade_009
+    100522: Vase Balustrade_010
+    100524: Vase Balustrade_011
+    100526: Vase Balustrade_012
+    100528: Vase Balustrade_013
+    100530: Vase Balustrade_014
+    100532: Vase Balustrade_015
+    100534: Vase Balustrade_016
+    100536: Vase Balustrade_017
+    100538: Vase Balustrade_018
+    100540: Vase Balustrade_019
+    100542: Vase Balustrade_020
+    100544: Vase Balustrade_021
+    100546: Vase Balustrade_022
+    100548: Vase Balustrade_023
+    100550: Vase Balustrade_024
+    100552: Vase Balustrade_025
+    100554: Vase Balustrade_026
+    100556: Vase Balustrade_027
+    100558: Vase Balustrade_028
+    100560: Vase Balustrade_029
+    100562: Vase Balustrade_030
+    100564: Vase Balustrade_031
+    100566: Vase Balustrade_032
+    100568: Vase Balustrade_033
+    100570: Vase Balustrade_034
+    100572: Vase Balustrade_035
+    100574: Vase Balustrade_036
+    100576: Vase Balustrade_037
+    100578: Vase Balustrade_038
+    100580: Vase Balustrade_039
+    100582: Vase Balustrade_040
+    100584: Vase Balustrade_041
+    100586: Vase Balustrade_042
+    100588: Vase Balustrade_043
+    100590: Vase Balustrade_044
+    100592: Vase Balustrade_045
+    100594: Vase Balustrade_046
+    100596: Vase Balustrade_047
+    100598: Vase Balustrade_048
+    100600: Vase Balustrade_049
+    100602: Vase Balustrade_050
+    100604: Vase Balustrade_051
+    100606: Vase Balustrade_052
+    100608: Vase Balustrade_053
+    100610: Vase Balustrade_054
+    100612: Vase Balustrade_055
+    100614: Vase Balustrade_056
+    100616: Vase Balustrade_057
+    100618: Vase Balustrade_058
+    100620: Vase Balustrade_059
+    100622: Vase Balustrade_060
+    100624: Vase Balustrade_061
+    100626: Vase Balustrade_062
+    100628: Vase Balustrade_063
+    100630: Vase Balustrade_064
+    100632: Vase Balustrade_065
+    100634: Vase Balustrade_066
+    100636: Vase Balustrade_067
+    100638: Vase Balustrade_068
+    100640: Vase Balustrade_069
+    100642: Vase Balustrade_070
+    100644: Vase Balustrade_071
+    100646: Vase Balustrade_072
+    100648: Vase Balustrade_073
+    100650: Vase Balustrade_074
+    100652: Vase Balustrade_075
+    100654: Vase Balustrade_076
+    100656: Vase Balustrade_077
+    100658: Vase Balustrade_078
+    100660: Vase Balustrade_079
+    100662: Vase Balustrade_080
+    100664: Vase Balustrade_081
+    100666: Vase Balustrade_082
+    100668: Vase Balustrade_083
+    100670: Vase Balustrade_084
+    100672: Vase Balustrade_085
+    100674: Vase Balustrade_086
+    100676: Vase Balustrade_087
+    100678: Vase Balustrade_088
+    100680: Vase Balustrade_089
+    100682: Vase Balustrade_090
+    100684: Vase Balustrade_091
+    100686: Vase Balustrade_092
+    100688: Vase Balustrade_093
+    100690: Vase Balustrade_094
+    100692: Vase Balustrade_095
+    100694: Vase Balustrade_096
+    100696: Vase Balustrade_097
+    100698: Vase Balustrade_098
+    100700: Vase Balustrade_099
+    100702: Vase Balustrade_100
+    100704: Vase Balustrade_101
+    100706: Vase Balustrade_102
+    100708: Vase Balustrade_103
+    100710: Vase Balustrade_104
+    100712: Vase Balustrade_105
+    100714: Vase Balustrade_106
+    100716: Vase Balustrade_107
+    100718: Vase Balustrade_108
+    100720: Vase Balustrade_109
+    100722: Vase Balustrade_110
+    100724: Vase Balustrade_111
+    100726: Vase Balustrade_112
+    100728: Vase Balustrade_113
+    100730: Vase Balustrade_114
+    100732: Vase Balustrade_115
+    100734: Vase Balustrade_116
+    100736: Vase Balustrade_117
+    100738: Vase Balustrade_118
+    100740: Vase Balustrade_119
+    100742: Vase Balustrade_120
+    100744: Vase Balustrade_121
+    100746: Vase Balustrade_122
+    100748: Vase Balustrade_123
+    100750: Vase Balustrade_124
+    100752: Vase Balustrade_125
+    100754: Vase Balustrade_126
+    100756: Vase Balustrade_127
+    100758: Vase Balustrade_128
+    100760: Vase Balustrade_129
+    100762: Vase Balustrade_130
+    100764: Vase Balustrade_131
+    100766: Vase Balustrade_132
+    100768: Vase Balustrade_133
+    100770: Vase Balustrade_134
+    100772: Vase Balustrade_135
+    100774: Vase Balustrade_136
+    100776: Vase Balustrade_137
+    100778: Vase Balustrade_138
+    100780: Vase Balustrade_139
+    100782: Vase Balustrade_140
+    100784: Vase Balustrade_141
+    100786: Vase Balustrade_142
+    100788: Vase Balustrade_143
+    100790: Vase Balustrade_144
+    100792: Vase Balustrade_145
+    100794: Vase Balustrade_146
+    100796: Vase Balustrade_147
+    100798: Vase Balustrade_148
+    100800: Vase Balustrade_149
+    100802: Vase Balustrade_150
+    100804: Vase Balustrade_151
+    100806: Vase Balustrade_152
+    100808: Vase Balustrade_153
+    100810: Vase Balustrade_154
+    100812: Vase Balustrade_155
+    100814: Vase Balustrade_156
+    100816: Vase Balustrade_157
+    100818: Vase Balustrade_158
+    100820: Vase Balustrade_159
+    100822: Vase Balustrade_160
+    100824: Vase Balustrade_161
+    100826: Vase Balustrade_162
+    100828: Vase Balustrade_163
+    100830: Vase Balustrade_164
+    100832: Vase Balustrade_165
+    100834: Vase Balustrade_166
+    100836: Vase Balustrade_167
+    100838: Vase Balustrade_168
+    100840: Vase Balustrade_169
+    100842: Vase Balustrade_170
+    100844: Vase Balustrade_171
+    100846: Vase Balustrade_172
+    100848: Vase Balustrade_173
+    100850: Vase Balustrade_174
+    100852: Vase Balustrade_175
+    100854: Vase Balustrade_176
+    100856: Vase Balustrade_177
+    100858: Vase Balustrade_178
+    100860: Vase Balustrade_179
+    100862: Vase Balustrade_180
+    100864: Vase Balustrade_181
+    100866: Vase Balustrade_182
+    100868: Vase Balustrade_183
+    100870: Vase Balustrade_184
+    100872: Vase Balustrade_185
+    100874: Vase Balustrade_186
+    100876: Vase Balustrade_187
+    100878: Vase Balustrade_188
+    100880: Vase Balustrade_189
+    100882: Vase Balustrade_190
+    100884: Vase Balustrade_191
+    100886: Vase Balustrade_192
+    100888: Vase_001
+    100890: Vase_002
+    100892: Vase_003
+    100894: Vase_004
+    100896: Vase_005
+    100898: Vase_006
+    100900: Vase_007
+    100902: Vase_008
+    100904: Vase_009
+    100906: Vase_010
+    100908: Vase_011
+    100910: Vase_012
+    100912: Vase_013
+    100914: Vase_014
+    100916: Vase_015
+    100918: Vase_016
+    100920: Vase_017
+    100922: Vase_018
+    100924: Vase_019
+    100926: Vase_020
+    100928: Vase_021
+    100930: Vase_022
+    100932: Vase_023
+    100934: Vase_024
+    100936: //RootNode
+    100938: Window Ornament_001
+    100940: Window Ornament_002
+    100942: Window Ornament_003
+    100944: Window Ornament_004
+    100946: Window Ornament_005
+    100948: Window Ornament_006
+    100950: Window Ornament_007
+    100952: Window Ornament_008
+    100954: Window Ornament_009
+    100956: Window Ornament_010
+    100958: Window Ornament_011
+    100960: Window Ornament_012
+    100962: Window Ornament_013
+    100964: Window Ornament_014
+    100966: Window Ornament_015
+    100968: Window Ornament_016
+    100970: Window Ornament_017
+    100972: Window Ornament_018
+    400000: Balustrade_001
+    400002: Balustrade_002
+    400004: Balustrade_003
+    400006: Balustrade_004
+    400008: Balustrade_005
+    400010: Balustrade_006
+    400012: Balustrade_007
+    400014: Balustrade_008
+    400016: Balustrade_009
+    400018: Balustrade_010
+    400020: Balustrade_011
+    400022: Balustrade_012
+    400024: BANK OF NEW ZEAL_001
+    400026: BANK OF NEW ZEAL_002
+    400028: Bank of New Zealand_001
+    400030: Bank of New Zealand_002
+    400032: Colummn#1_001
+    400034: Colummn#1_002
+    400036: Colummn#1_003
+    400038: Colummn#1_004
+    400040: Colummn#1_005
+    400042: Colummn#1_006
+    400044: Colummn#1_007
+    400046: Colummn#1_008
+    400048: Component#1_001
+    400050: Component#1_002
+    400052: Component#1_003
+    400054: Component#1_004
+    400056: Component#1_005
+    400058: Component#1_006
+    400060: Component#1_007
+    400062: Component#1_008
+    400064: Component#1_009
+    400066: Component#1_010
+    400068: Component#1_011
+    400070: Component#1_012
+    400072: Component#1_013
+    400074: Component#1_014
+    400076: Component#1_015
+    400078: Component#1_016
+    400080: Component#1_017
+    400082: Component#1_018
+    400084: Component#1_019
+    400086: Component#1_020
+    400088: Component#1_021
+    400090: Component#1_022
+    400092: Component#1_023
+    400094: Component#1_024
+    400096: Component#1_025
+    400098: Component#1_026
+    400100: Component#1_027
+    400102: Component#1_028
+    400104: Component#1_029
+    400106: Component#1_030
+    400108: Component#1_031
+    400110: Component#1_032
+    400112: Component#1_033
+    400114: Component#1_034
+    400116: Component#1_035
+    400118: Component#1_036
+    400120: Component#1_037
+    400122: Component#1_038
+    400124: Component#1_039
+    400126: Component#1_040
+    400128: Component#1_041
+    400130: Component#1_042
+    400132: Component#1_043
+    400134: Component#1_044
+    400136: Component#1_045
+    400138: Component#1_046
+    400140: Component#1_047
+    400142: Component#1_048
+    400144: Component#1_049
+    400146: Component#1_050
+    400148: Component#1_051
+    400150: Component#1_052
+    400152: Component#1_053
+    400154: Component#1_054
+    400156: Component#1_055
+    400158: Component#1_056
+    400160: Component#1_057
+    400162: Component#1_058
+    400164: Component#1_059
+    400166: Component#1_060
+    400168: Component#1_061
+    400170: Component#1_062
+    400172: Component#1_063
+    400174: Component#1_064
+    400176: Corinthian Colummn_001
+    400178: Corinthian Colummn_002
+    400180: Corinthian Colummn_003
+    400182: Corinthian Colummn_004
+    400184: Corinthian Colummn_005
+    400186: Corinthian Colummn_006
+    400188: Corinthian Colummn_007
+    400190: Corinthian Colummn_008
+    400192: Curved Ornament_001
+    400194: Curved Ornament_002
+    400196: Curved Ornament_003
+    400198: Curved Ornament_004
+    400200: Curved Ornament_005
+    400202: Curved Ornament_006
+    400204: Curved Ornament_007
+    400206: Curved Ornament_008
+    400208: Curved Ornament_009
+    400210: Curved Ornament_010
+    400212: Curved Ornament_011
+    400214: Curved Ornament_012
+    400216: Curved Ornament_013
+    400218: Curved Ornament_014
+    400220: Curved Ornament_015
+    400222: Curved Ornament_016
+    400224: Curved Ornament_017
+    400226: Curved Ornament_018
+    400228: Curved Ornament_019
+    400230: Curved Ornament_020
+    400232: Curved Ornament_021
+    400234: Curved Ornament_022
+    400236: Curved Ornament_023
+    400238: Curved Ornament_024
+    400240: Group_001
+    400242: Group_002
+    400244: Group_003
+    400246: Group_004
+    400248: Group_005
+    400250: Group_006
+    400252: Group_007
+    400254: Group_008
+    400256: Group_009
+    400258: Group_010
+    400260: Group_011
+    400262: Group_012
+    400264: Group_013
+    400266: Group_014
+    400268: Group_015
+    400270: Group_016
+    400272: Group_017
+    400274: Group_018
+    400276: Group_019
+    400278: Group_020
+    400280: Group_021
+    400282: Group_022
+    400284: Group_023
+    400286: Group_024
+    400288: Group_025
+    400290: Group_026
+    400292: Group_027
+    400294: Group_028
+    400296: Group_029
+    400298: Group_030
+    400300: Group_031
+    400302: Group_032
+    400304: Group_033
+    400306: Group_034
+    400308: Group_035
+    400310: Group_036
+    400312: Group_037
+    400314: Group_038
+    400316: Group_039
+    400318: Group_040
+    400320: Group_041
+    400322: Group_042
+    400324: Group_043
+    400326: Group_044
+    400328: Group_045
+    400330: Group_046
+    400332: Group_047
+    400334: Group_048
+    400336: Group_049
+    400338: Group_050
+    400340: Group_051
+    400342: Group_052
+    400344: Group_053
+    400346: Group_054
+    400348: Group_055
+    400350: Group_056
+    400352: Group_057
+    400354: Group_058
+    400356: Group_059
+    400358: Group_060
+    400360: Group_061
+    400362: Group_062
+    400364: Group_063
+    400366: Group_064
+    400368: Group_065
+    400370: Group_066
+    400372: Group_067
+    400374: Group_068
+    400376: Group_069
+    400378: Group_070
+    400380: Group_071
+    400382: Group_072
+    400384: Group_073
+    400386: Group_074
+    400388: Group_075
+    400390: Group_076
+    400392: Group_077
+    400394: Group_078
+    400396: Group_079
+    400398: Group_080
+    400400: Group_081
+    400402: Group_082
+    400404: Group_083
+    400406: Group_084
+    400408: Group_085
+    400410: Group_086
+    400412: Group_087
+    400414: Group_088
+    400416: Group_089
+    400418: Group_090
+    400420: Group_091
+    400422: Group_092
+    400424: Group_093
+    400426: Group_094
+    400428: Group_095
+    400430: Group_096
+    400432: Group_097
+    400434: Group_098
+    400436: Group_099
+    400438: Group_100
+    400440: Group_101
+    400442: Group_102
+    400444: Group_103
+    400446: Group_104
+    400448: Group_105
+    400450: Group_106
+    400452: Group_107
+    400454: Group_108
+    400456: Group_109
+    400458: Group_110
+    400460: Group_111
+    400462: Group_112
+    400464: Group_113
+    400466: Group_114
+    400468: Group_115
+    400470: Group_116
+    400472: Group_117
+    400474: Group_118
+    400476: Group_119
+    400478: Group_120
+    400480: Parliament Ornament 1_001
+    400482: Parliament Ornament 1_002
+    400484: Parliament Ornament 1_003
+    400486: Parliament Ornament 1_004
+    400488: Parliament Ornament 1_005
+    400490: Parliament Ornament 1_006
+    400492: Parliament Ornament 1_007
+    400494: Parliament Ornament 1_008
+    400496: Parliament Ornament 1_009
+    400498: Parliament Ornament 1_010
+    400500: Parliament Ornament 1_011
+    400502: Parliament Ornament 1_012
+    400504: Vase Balustrade_001
+    400506: Vase Balustrade_002
+    400508: Vase Balustrade_003
+    400510: Vase Balustrade_004
+    400512: Vase Balustrade_005
+    400514: Vase Balustrade_006
+    400516: Vase Balustrade_007
+    400518: Vase Balustrade_008
+    400520: Vase Balustrade_009
+    400522: Vase Balustrade_010
+    400524: Vase Balustrade_011
+    400526: Vase Balustrade_012
+    400528: Vase Balustrade_013
+    400530: Vase Balustrade_014
+    400532: Vase Balustrade_015
+    400534: Vase Balustrade_016
+    400536: Vase Balustrade_017
+    400538: Vase Balustrade_018
+    400540: Vase Balustrade_019
+    400542: Vase Balustrade_020
+    400544: Vase Balustrade_021
+    400546: Vase Balustrade_022
+    400548: Vase Balustrade_023
+    400550: Vase Balustrade_024
+    400552: Vase Balustrade_025
+    400554: Vase Balustrade_026
+    400556: Vase Balustrade_027
+    400558: Vase Balustrade_028
+    400560: Vase Balustrade_029
+    400562: Vase Balustrade_030
+    400564: Vase Balustrade_031
+    400566: Vase Balustrade_032
+    400568: Vase Balustrade_033
+    400570: Vase Balustrade_034
+    400572: Vase Balustrade_035
+    400574: Vase Balustrade_036
+    400576: Vase Balustrade_037
+    400578: Vase Balustrade_038
+    400580: Vase Balustrade_039
+    400582: Vase Balustrade_040
+    400584: Vase Balustrade_041
+    400586: Vase Balustrade_042
+    400588: Vase Balustrade_043
+    400590: Vase Balustrade_044
+    400592: Vase Balustrade_045
+    400594: Vase Balustrade_046
+    400596: Vase Balustrade_047
+    400598: Vase Balustrade_048
+    400600: Vase Balustrade_049
+    400602: Vase Balustrade_050
+    400604: Vase Balustrade_051
+    400606: Vase Balustrade_052
+    400608: Vase Balustrade_053
+    400610: Vase Balustrade_054
+    400612: Vase Balustrade_055
+    400614: Vase Balustrade_056
+    400616: Vase Balustrade_057
+    400618: Vase Balustrade_058
+    400620: Vase Balustrade_059
+    400622: Vase Balustrade_060
+    400624: Vase Balustrade_061
+    400626: Vase Balustrade_062
+    400628: Vase Balustrade_063
+    400630: Vase Balustrade_064
+    400632: Vase Balustrade_065
+    400634: Vase Balustrade_066
+    400636: Vase Balustrade_067
+    400638: Vase Balustrade_068
+    400640: Vase Balustrade_069
+    400642: Vase Balustrade_070
+    400644: Vase Balustrade_071
+    400646: Vase Balustrade_072
+    400648: Vase Balustrade_073
+    400650: Vase Balustrade_074
+    400652: Vase Balustrade_075
+    400654: Vase Balustrade_076
+    400656: Vase Balustrade_077
+    400658: Vase Balustrade_078
+    400660: Vase Balustrade_079
+    400662: Vase Balustrade_080
+    400664: Vase Balustrade_081
+    400666: Vase Balustrade_082
+    400668: Vase Balustrade_083
+    400670: Vase Balustrade_084
+    400672: Vase Balustrade_085
+    400674: Vase Balustrade_086
+    400676: Vase Balustrade_087
+    400678: Vase Balustrade_088
+    400680: Vase Balustrade_089
+    400682: Vase Balustrade_090
+    400684: Vase Balustrade_091
+    400686: Vase Balustrade_092
+    400688: Vase Balustrade_093
+    400690: Vase Balustrade_094
+    400692: Vase Balustrade_095
+    400694: Vase Balustrade_096
+    400696: Vase Balustrade_097
+    400698: Vase Balustrade_098
+    400700: Vase Balustrade_099
+    400702: Vase Balustrade_100
+    400704: Vase Balustrade_101
+    400706: Vase Balustrade_102
+    400708: Vase Balustrade_103
+    400710: Vase Balustrade_104
+    400712: Vase Balustrade_105
+    400714: Vase Balustrade_106
+    400716: Vase Balustrade_107
+    400718: Vase Balustrade_108
+    400720: Vase Balustrade_109
+    400722: Vase Balustrade_110
+    400724: Vase Balustrade_111
+    400726: Vase Balustrade_112
+    400728: Vase Balustrade_113
+    400730: Vase Balustrade_114
+    400732: Vase Balustrade_115
+    400734: Vase Balustrade_116
+    400736: Vase Balustrade_117
+    400738: Vase Balustrade_118
+    400740: Vase Balustrade_119
+    400742: Vase Balustrade_120
+    400744: Vase Balustrade_121
+    400746: Vase Balustrade_122
+    400748: Vase Balustrade_123
+    400750: Vase Balustrade_124
+    400752: Vase Balustrade_125
+    400754: Vase Balustrade_126
+    400756: Vase Balustrade_127
+    400758: Vase Balustrade_128
+    400760: Vase Balustrade_129
+    400762: Vase Balustrade_130
+    400764: Vase Balustrade_131
+    400766: Vase Balustrade_132
+    400768: Vase Balustrade_133
+    400770: Vase Balustrade_134
+    400772: Vase Balustrade_135
+    400774: Vase Balustrade_136
+    400776: Vase Balustrade_137
+    400778: Vase Balustrade_138
+    400780: Vase Balustrade_139
+    400782: Vase Balustrade_140
+    400784: Vase Balustrade_141
+    400786: Vase Balustrade_142
+    400788: Vase Balustrade_143
+    400790: Vase Balustrade_144
+    400792: Vase Balustrade_145
+    400794: Vase Balustrade_146
+    400796: Vase Balustrade_147
+    400798: Vase Balustrade_148
+    400800: Vase Balustrade_149
+    400802: Vase Balustrade_150
+    400804: Vase Balustrade_151
+    400806: Vase Balustrade_152
+    400808: Vase Balustrade_153
+    400810: Vase Balustrade_154
+    400812: Vase Balustrade_155
+    400814: Vase Balustrade_156
+    400816: Vase Balustrade_157
+    400818: Vase Balustrade_158
+    400820: Vase Balustrade_159
+    400822: Vase Balustrade_160
+    400824: Vase Balustrade_161
+    400826: Vase Balustrade_162
+    400828: Vase Balustrade_163
+    400830: Vase Balustrade_164
+    400832: Vase Balustrade_165
+    400834: Vase Balustrade_166
+    400836: Vase Balustrade_167
+    400838: Vase Balustrade_168
+    400840: Vase Balustrade_169
+    400842: Vase Balustrade_170
+    400844: Vase Balustrade_171
+    400846: Vase Balustrade_172
+    400848: Vase Balustrade_173
+    400850: Vase Balustrade_174
+    400852: Vase Balustrade_175
+    400854: Vase Balustrade_176
+    400856: Vase Balustrade_177
+    400858: Vase Balustrade_178
+    400860: Vase Balustrade_179
+    400862: Vase Balustrade_180
+    400864: Vase Balustrade_181
+    400866: Vase Balustrade_182
+    400868: Vase Balustrade_183
+    400870: Vase Balustrade_184
+    400872: Vase Balustrade_185
+    400874: Vase Balustrade_186
+    400876: Vase Balustrade_187
+    400878: Vase Balustrade_188
+    400880: Vase Balustrade_189
+    400882: Vase Balustrade_190
+    400884: Vase Balustrade_191
+    400886: Vase Balustrade_192
+    400888: Vase_001
+    400890: Vase_002
+    400892: Vase_003
+    400894: Vase_004
+    400896: Vase_005
+    400898: Vase_006
+    400900: Vase_007
+    400902: Vase_008
+    400904: Vase_009
+    400906: Vase_010
+    400908: Vase_011
+    400910: Vase_012
+    400912: Vase_013
+    400914: Vase_014
+    400916: Vase_015
+    400918: Vase_016
+    400920: Vase_017
+    400922: Vase_018
+    400924: Vase_019
+    400926: Vase_020
+    400928: Vase_021
+    400930: Vase_022
+    400932: Vase_023
+    400934: Vase_024
+    400936: //RootNode
+    400938: Window Ornament_001
+    400940: Window Ornament_002
+    400942: Window Ornament_003
+    400944: Window Ornament_004
+    400946: Window Ornament_005
+    400948: Window Ornament_006
+    400950: Window Ornament_007
+    400952: Window Ornament_008
+    400954: Window Ornament_009
+    400956: Window Ornament_010
+    400958: Window Ornament_011
+    400960: Window Ornament_012
+    400962: Window Ornament_013
+    400964: Window Ornament_014
+    400966: Window Ornament_015
+    400968: Window Ornament_016
+    400970: Window Ornament_017
+    400972: Window Ornament_018
+    2300000: Balustrade_001
+    2300002: Balustrade_003
+    2300004: Balustrade_005
+    2300006: Balustrade_007
+    2300008: Balustrade_009
+    2300010: Balustrade_011
+    2300012: BANK OF NEW ZEAL_001
+    2300014: BANK OF NEW ZEAL_002
+    2300016: Bank of New Zealand_001
+    2300018: Colummn#1_001
+    2300020: Colummn#1_002
+    2300022: Colummn#1_003
+    2300024: Colummn#1_004
+    2300026: Colummn#1_005
+    2300028: Colummn#1_006
+    2300030: Colummn#1_007
+    2300032: Colummn#1_008
+    2300034: Component#1_001
+    2300036: Component#1_002
+    2300038: Component#1_005
+    2300040: Component#1_006
+    2300042: Component#1_009
+    2300044: Component#1_010
+    2300046: Component#1_013
+    2300048: Component#1_014
+    2300050: Component#1_017
+    2300052: Component#1_018
+    2300054: Component#1_021
+    2300056: Component#1_022
+    2300058: Component#1_025
+    2300060: Component#1_026
+    2300062: Component#1_029
+    2300064: Component#1_030
+    2300066: Component#1_033
+    2300068: Component#1_034
+    2300070: Component#1_037
+    2300072: Component#1_038
+    2300074: Component#1_041
+    2300076: Component#1_042
+    2300078: Component#1_045
+    2300080: Component#1_046
+    2300082: Component#1_049
+    2300084: Component#1_050
+    2300086: Component#1_053
+    2300088: Component#1_054
+    2300090: Component#1_057
+    2300092: Component#1_058
+    2300094: Component#1_061
+    2300096: Component#1_062
+    2300098: Curved Ornament_001
+    2300100: Curved Ornament_003
+    2300102: Curved Ornament_005
+    2300104: Curved Ornament_007
+    2300106: Curved Ornament_009
+    2300108: Curved Ornament_011
+    2300110: Curved Ornament_013
+    2300112: Curved Ornament_015
+    2300114: Curved Ornament_017
+    2300116: Curved Ornament_019
+    2300118: Curved Ornament_021
+    2300120: Curved Ornament_023
+    2300122: Group_001
+    2300124: Group_002
+    2300126: Group_004
+    2300128: Group_005
+    2300130: Group_006
+    2300132: Group_007
+    2300134: Group_008
+    2300136: Group_009
+    2300138: Group_011
+    2300140: Group_012
+    2300142: Group_013
+    2300144: Group_014
+    2300146: Group_015
+    2300148: Group_016
+    2300150: Group_017
+    2300152: Group_019
+    2300154: Group_020
+    2300156: Group_021
+    2300158: Group_022
+    2300160: Group_023
+    2300162: Group_024
+    2300164: Group_026
+    2300166: Group_027
+    2300168: Group_028
+    2300170: Group_029
+    2300172: Group_030
+    2300174: Group_031
+    2300176: Group_032
+    2300178: Group_034
+    2300180: Group_035
+    2300182: Group_036
+    2300184: Group_037
+    2300186: Group_038
+    2300188: Group_039
+    2300190: Group_041
+    2300192: Group_042
+    2300194: Group_043
+    2300196: Group_044
+    2300198: Group_045
+    2300200: Group_046
+    2300202: Group_047
+    2300204: Group_049
+    2300206: Group_050
+    2300208: Group_051
+    2300210: Group_052
+    2300212: Group_053
+    2300214: Group_054
+    2300216: Group_056
+    2300218: Group_057
+    2300220: Group_058
+    2300222: Group_059
+    2300224: Group_060
+    2300226: Group_061
+    2300228: Group_062
+    2300230: Group_064
+    2300232: Group_065
+    2300234: Group_066
+    2300236: Group_067
+    2300238: Group_068
+    2300240: Group_069
+    2300242: Group_071
+    2300244: Group_072
+    2300246: Group_073
+    2300248: Group_074
+    2300250: Group_075
+    2300252: Group_076
+    2300254: Group_077
+    2300256: Group_079
+    2300258: Group_080
+    2300260: Group_081
+    2300262: Group_082
+    2300264: Group_083
+    2300266: Group_084
+    2300268: Group_086
+    2300270: Group_087
+    2300272: Group_088
+    2300274: Group_089
+    2300276: Group_090
+    2300278: Group_091
+    2300280: Group_092
+    2300282: Group_094
+    2300284: Group_095
+    2300286: Group_096
+    2300288: Group_097
+    2300290: Group_098
+    2300292: Group_099
+    2300294: Group_101
+    2300296: Group_102
+    2300298: Group_103
+    2300300: Group_104
+    2300302: Group_105
+    2300304: Group_106
+    2300306: Group_107
+    2300308: Group_109
+    2300310: Group_110
+    2300312: Group_111
+    2300314: Group_112
+    2300316: Group_113
+    2300318: Group_114
+    2300320: Group_116
+    2300322: Group_117
+    2300324: Group_118
+    2300326: Group_119
+    2300328: Group_120
+    2300330: Parliament Ornament 1_001
+    2300332: Parliament Ornament 1_003
+    2300334: Parliament Ornament 1_005
+    2300336: Parliament Ornament 1_007
+    2300338: Parliament Ornament 1_009
+    2300340: Parliament Ornament 1_011
+    2300342: Vase Balustrade_001
+    2300344: Vase Balustrade_003
+    2300346: Vase Balustrade_005
+    2300348: Vase Balustrade_007
+    2300350: Vase Balustrade_009
+    2300352: Vase Balustrade_011
+    2300354: Vase Balustrade_013
+    2300356: Vase Balustrade_015
+    2300358: Vase Balustrade_017
+    2300360: Vase Balustrade_019
+    2300362: Vase Balustrade_021
+    2300364: Vase Balustrade_023
+    2300366: Vase Balustrade_025
+    2300368: Vase Balustrade_027
+    2300370: Vase Balustrade_029
+    2300372: Vase Balustrade_031
+    2300374: Vase Balustrade_033
+    2300376: Vase Balustrade_035
+    2300378: Vase Balustrade_037
+    2300380: Vase Balustrade_039
+    2300382: Vase Balustrade_041
+    2300384: Vase Balustrade_043
+    2300386: Vase Balustrade_045
+    2300388: Vase Balustrade_047
+    2300390: Vase Balustrade_049
+    2300392: Vase Balustrade_051
+    2300394: Vase Balustrade_053
+    2300396: Vase Balustrade_055
+    2300398: Vase Balustrade_057
+    2300400: Vase Balustrade_059
+    2300402: Vase Balustrade_061
+    2300404: Vase Balustrade_063
+    2300406: Vase Balustrade_065
+    2300408: Vase Balustrade_067
+    2300410: Vase Balustrade_069
+    2300412: Vase Balustrade_071
+    2300414: Vase Balustrade_073
+    2300416: Vase Balustrade_075
+    2300418: Vase Balustrade_077
+    2300420: Vase Balustrade_079
+    2300422: Vase Balustrade_081
+    2300424: Vase Balustrade_083
+    2300426: Vase Balustrade_085
+    2300428: Vase Balustrade_087
+    2300430: Vase Balustrade_089
+    2300432: Vase Balustrade_091
+    2300434: Vase Balustrade_093
+    2300436: Vase Balustrade_095
+    2300438: Vase Balustrade_097
+    2300440: Vase Balustrade_099
+    2300442: Vase Balustrade_101
+    2300444: Vase Balustrade_103
+    2300446: Vase Balustrade_105
+    2300448: Vase Balustrade_107
+    2300450: Vase Balustrade_109
+    2300452: Vase Balustrade_111
+    2300454: Vase Balustrade_113
+    2300456: Vase Balustrade_115
+    2300458: Vase Balustrade_117
+    2300460: Vase Balustrade_119
+    2300462: Vase Balustrade_121
+    2300464: Vase Balustrade_123
+    2300466: Vase Balustrade_125
+    2300468: Vase Balustrade_127
+    2300470: Vase Balustrade_129
+    2300472: Vase Balustrade_131
+    2300474: Vase Balustrade_133
+    2300476: Vase Balustrade_135
+    2300478: Vase Balustrade_137
+    2300480: Vase Balustrade_139
+    2300482: Vase Balustrade_141
+    2300484: Vase Balustrade_143
+    2300486: Vase Balustrade_145
+    2300488: Vase Balustrade_147
+    2300490: Vase Balustrade_149
+    2300492: Vase Balustrade_151
+    2300494: Vase Balustrade_153
+    2300496: Vase Balustrade_155
+    2300498: Vase Balustrade_157
+    2300500: Vase Balustrade_159
+    2300502: Vase Balustrade_161
+    2300504: Vase Balustrade_163
+    2300506: Vase Balustrade_165
+    2300508: Vase Balustrade_167
+    2300510: Vase Balustrade_169
+    2300512: Vase Balustrade_171
+    2300514: Vase Balustrade_173
+    2300516: Vase Balustrade_175
+    2300518: Vase Balustrade_177
+    2300520: Vase Balustrade_179
+    2300522: Vase Balustrade_181
+    2300524: Vase Balustrade_183
+    2300526: Vase Balustrade_185
+    2300528: Vase Balustrade_187
+    2300530: Vase Balustrade_189
+    2300532: Vase Balustrade_191
+    2300534: Vase_001
+    2300536: Vase_002
+    2300538: Vase_003
+    2300540: Vase_004
+    2300542: Vase_005
+    2300544: Vase_006
+    2300546: Vase_007
+    2300548: Vase_008
+    2300550: Vase_009
+    2300552: Vase_010
+    2300554: Vase_011
+    2300556: Vase_012
+    2300558: Vase_013
+    2300560: Vase_014
+    2300562: Vase_015
+    2300564: Vase_016
+    2300566: Vase_017
+    2300568: Vase_018
+    2300570: Vase_019
+    2300572: Vase_020
+    2300574: Vase_021
+    2300576: Vase_022
+    2300578: Vase_023
+    2300580: Vase_024
+    2300582: Window Ornament_001
+    2300584: Window Ornament_004
+    2300586: Window Ornament_007
+    2300588: Window Ornament_010
+    2300590: Window Ornament_013
+    2300592: Window Ornament_016
+    3300000: Balustrade_001
+    3300002: Balustrade_003
+    3300004: Balustrade_005
+    3300006: Balustrade_007
+    3300008: Balustrade_009
+    3300010: Balustrade_011
+    3300012: BANK OF NEW ZEAL_001
+    3300014: BANK OF NEW ZEAL_002
+    3300016: Bank of New Zealand_001
+    3300018: Colummn#1_001
+    3300020: Colummn#1_002
+    3300022: Colummn#1_003
+    3300024: Colummn#1_004
+    3300026: Colummn#1_005
+    3300028: Colummn#1_006
+    3300030: Colummn#1_007
+    3300032: Colummn#1_008
+    3300034: Component#1_001
+    3300036: Component#1_002
+    3300038: Component#1_005
+    3300040: Component#1_006
+    3300042: Component#1_009
+    3300044: Component#1_010
+    3300046: Component#1_013
+    3300048: Component#1_014
+    3300050: Component#1_017
+    3300052: Component#1_018
+    3300054: Component#1_021
+    3300056: Component#1_022
+    3300058: Component#1_025
+    3300060: Component#1_026
+    3300062: Component#1_029
+    3300064: Component#1_030
+    3300066: Component#1_033
+    3300068: Component#1_034
+    3300070: Component#1_037
+    3300072: Component#1_038
+    3300074: Component#1_041
+    3300076: Component#1_042
+    3300078: Component#1_045
+    3300080: Component#1_046
+    3300082: Component#1_049
+    3300084: Component#1_050
+    3300086: Component#1_053
+    3300088: Component#1_054
+    3300090: Component#1_057
+    3300092: Component#1_058
+    3300094: Component#1_061
+    3300096: Component#1_062
+    3300098: Curved Ornament_001
+    3300100: Curved Ornament_003
+    3300102: Curved Ornament_005
+    3300104: Curved Ornament_007
+    3300106: Curved Ornament_009
+    3300108: Curved Ornament_011
+    3300110: Curved Ornament_013
+    3300112: Curved Ornament_015
+    3300114: Curved Ornament_017
+    3300116: Curved Ornament_019
+    3300118: Curved Ornament_021
+    3300120: Curved Ornament_023
+    3300122: Group_001
+    3300124: Group_002
+    3300126: Group_004
+    3300128: Group_005
+    3300130: Group_006
+    3300132: Group_007
+    3300134: Group_008
+    3300136: Group_009
+    3300138: Group_011
+    3300140: Group_012
+    3300142: Group_013
+    3300144: Group_014
+    3300146: Group_015
+    3300148: Group_016
+    3300150: Group_017
+    3300152: Group_019
+    3300154: Group_020
+    3300156: Group_021
+    3300158: Group_022
+    3300160: Group_023
+    3300162: Group_024
+    3300164: Group_026
+    3300166: Group_027
+    3300168: Group_028
+    3300170: Group_029
+    3300172: Group_030
+    3300174: Group_031
+    3300176: Group_032
+    3300178: Group_034
+    3300180: Group_035
+    3300182: Group_036
+    3300184: Group_037
+    3300186: Group_038
+    3300188: Group_039
+    3300190: Group_041
+    3300192: Group_042
+    3300194: Group_043
+    3300196: Group_044
+    3300198: Group_045
+    3300200: Group_046
+    3300202: Group_047
+    3300204: Group_049
+    3300206: Group_050
+    3300208: Group_051
+    3300210: Group_052
+    3300212: Group_053
+    3300214: Group_054
+    3300216: Group_056
+    3300218: Group_057
+    3300220: Group_058
+    3300222: Group_059
+    3300224: Group_060
+    3300226: Group_061
+    3300228: Group_062
+    3300230: Group_064
+    3300232: Group_065
+    3300234: Group_066
+    3300236: Group_067
+    3300238: Group_068
+    3300240: Group_069
+    3300242: Group_071
+    3300244: Group_072
+    3300246: Group_073
+    3300248: Group_074
+    3300250: Group_075
+    3300252: Group_076
+    3300254: Group_077
+    3300256: Group_079
+    3300258: Group_080
+    3300260: Group_081
+    3300262: Group_082
+    3300264: Group_083
+    3300266: Group_084
+    3300268: Group_086
+    3300270: Group_087
+    3300272: Group_088
+    3300274: Group_089
+    3300276: Group_090
+    3300278: Group_091
+    3300280: Group_092
+    3300282: Group_094
+    3300284: Group_095
+    3300286: Group_096
+    3300288: Group_097
+    3300290: Group_098
+    3300292: Group_099
+    3300294: Group_101
+    3300296: Group_102
+    3300298: Group_103
+    3300300: Group_104
+    3300302: Group_105
+    3300304: Group_106
+    3300306: Group_107
+    3300308: Group_109
+    3300310: Group_110
+    3300312: Group_111
+    3300314: Group_112
+    3300316: Group_113
+    3300318: Group_114
+    3300320: Group_116
+    3300322: Group_117
+    3300324: Group_118
+    3300326: Group_119
+    3300328: Group_120
+    3300330: Parliament Ornament 1_001
+    3300332: Parliament Ornament 1_003
+    3300334: Parliament Ornament 1_005
+    3300336: Parliament Ornament 1_007
+    3300338: Parliament Ornament 1_009
+    3300340: Parliament Ornament 1_011
+    3300342: Vase Balustrade_001
+    3300344: Vase Balustrade_003
+    3300346: Vase Balustrade_005
+    3300348: Vase Balustrade_007
+    3300350: Vase Balustrade_009
+    3300352: Vase Balustrade_011
+    3300354: Vase Balustrade_013
+    3300356: Vase Balustrade_015
+    3300358: Vase Balustrade_017
+    3300360: Vase Balustrade_019
+    3300362: Vase Balustrade_021
+    3300364: Vase Balustrade_023
+    3300366: Vase Balustrade_025
+    3300368: Vase Balustrade_027
+    3300370: Vase Balustrade_029
+    3300372: Vase Balustrade_031
+    3300374: Vase Balustrade_033
+    3300376: Vase Balustrade_035
+    3300378: Vase Balustrade_037
+    3300380: Vase Balustrade_039
+    3300382: Vase Balustrade_041
+    3300384: Vase Balustrade_043
+    3300386: Vase Balustrade_045
+    3300388: Vase Balustrade_047
+    3300390: Vase Balustrade_049
+    3300392: Vase Balustrade_051
+    3300394: Vase Balustrade_053
+    3300396: Vase Balustrade_055
+    3300398: Vase Balustrade_057
+    3300400: Vase Balustrade_059
+    3300402: Vase Balustrade_061
+    3300404: Vase Balustrade_063
+    3300406: Vase Balustrade_065
+    3300408: Vase Balustrade_067
+    3300410: Vase Balustrade_069
+    3300412: Vase Balustrade_071
+    3300414: Vase Balustrade_073
+    3300416: Vase Balustrade_075
+    3300418: Vase Balustrade_077
+    3300420: Vase Balustrade_079
+    3300422: Vase Balustrade_081
+    3300424: Vase Balustrade_083
+    3300426: Vase Balustrade_085
+    3300428: Vase Balustrade_087
+    3300430: Vase Balustrade_089
+    3300432: Vase Balustrade_091
+    3300434: Vase Balustrade_093
+    3300436: Vase Balustrade_095
+    3300438: Vase Balustrade_097
+    3300440: Vase Balustrade_099
+    3300442: Vase Balustrade_101
+    3300444: Vase Balustrade_103
+    3300446: Vase Balustrade_105
+    3300448: Vase Balustrade_107
+    3300450: Vase Balustrade_109
+    3300452: Vase Balustrade_111
+    3300454: Vase Balustrade_113
+    3300456: Vase Balustrade_115
+    3300458: Vase Balustrade_117
+    3300460: Vase Balustrade_119
+    3300462: Vase Balustrade_121
+    3300464: Vase Balustrade_123
+    3300466: Vase Balustrade_125
+    3300468: Vase Balustrade_127
+    3300470: Vase Balustrade_129
+    3300472: Vase Balustrade_131
+    3300474: Vase Balustrade_133
+    3300476: Vase Balustrade_135
+    3300478: Vase Balustrade_137
+    3300480: Vase Balustrade_139
+    3300482: Vase Balustrade_141
+    3300484: Vase Balustrade_143
+    3300486: Vase Balustrade_145
+    3300488: Vase Balustrade_147
+    3300490: Vase Balustrade_149
+    3300492: Vase Balustrade_151
+    3300494: Vase Balustrade_153
+    3300496: Vase Balustrade_155
+    3300498: Vase Balustrade_157
+    3300500: Vase Balustrade_159
+    3300502: Vase Balustrade_161
+    3300504: Vase Balustrade_163
+    3300506: Vase Balustrade_165
+    3300508: Vase Balustrade_167
+    3300510: Vase Balustrade_169
+    3300512: Vase Balustrade_171
+    3300514: Vase Balustrade_173
+    3300516: Vase Balustrade_175
+    3300518: Vase Balustrade_177
+    3300520: Vase Balustrade_179
+    3300522: Vase Balustrade_181
+    3300524: Vase Balustrade_183
+    3300526: Vase Balustrade_185
+    3300528: Vase Balustrade_187
+    3300530: Vase Balustrade_189
+    3300532: Vase Balustrade_191
+    3300534: Vase_001
+    3300536: Vase_002
+    3300538: Vase_003
+    3300540: Vase_004
+    3300542: Vase_005
+    3300544: Vase_006
+    3300546: Vase_007
+    3300548: Vase_008
+    3300550: Vase_009
+    3300552: Vase_010
+    3300554: Vase_011
+    3300556: Vase_012
+    3300558: Vase_013
+    3300560: Vase_014
+    3300562: Vase_015
+    3300564: Vase_016
+    3300566: Vase_017
+    3300568: Vase_018
+    3300570: Vase_019
+    3300572: Vase_020
+    3300574: Vase_021
+    3300576: Vase_022
+    3300578: Vase_023
+    3300580: Vase_024
+    3300582: Window Ornament_001
+    3300584: Window Ornament_004
+    3300586: Window Ornament_007
+    3300588: Window Ornament_010
+    3300590: Window Ornament_013
+    3300592: Window Ornament_016
+    4300000: Bank of New Zealand_001
+    4300002: Colummn#1_001
+    4300004: Component#1_001
+    4300006: Component#1_002
+    4300008: Component#1_005
+    4300010: Component#1_006
+    4300012: Balustrade_001
+    4300014: Vase Balustrade_001
+    4300016: Vase Balustrade_003
+    4300018: Vase Balustrade_005
+    4300020: Vase Balustrade_007
+    4300022: Vase Balustrade_009
+    4300024: Vase Balustrade_011
+    4300026: Vase Balustrade_013
+    4300028: Vase Balustrade_015
+    4300030: Vase Balustrade_017
+    4300032: Vase Balustrade_019
+    4300034: Vase Balustrade_021
+    4300036: Vase Balustrade_023
+    4300038: Vase Balustrade_025
+    4300040: Vase Balustrade_027
+    4300042: Vase Balustrade_029
+    4300044: Vase Balustrade_031
+    4300046: Balustrade_003
+    4300048: Vase Balustrade_033
+    4300050: Vase Balustrade_035
+    4300052: Vase Balustrade_037
+    4300054: Vase Balustrade_039
+    4300056: Vase Balustrade_041
+    4300058: Vase Balustrade_043
+    4300060: Vase Balustrade_045
+    4300062: Vase Balustrade_047
+    4300064: Vase Balustrade_049
+    4300066: Vase Balustrade_051
+    4300068: Vase Balustrade_053
+    4300070: Vase Balustrade_055
+    4300072: Vase Balustrade_057
+    4300074: Vase Balustrade_059
+    4300076: Vase Balustrade_061
+    4300078: Vase Balustrade_063
+    4300080: Balustrade_005
+    4300082: Vase Balustrade_065
+    4300084: Vase Balustrade_067
+    4300086: Vase Balustrade_069
+    4300088: Vase Balustrade_071
+    4300090: Vase Balustrade_073
+    4300092: Vase Balustrade_075
+    4300094: Vase Balustrade_077
+    4300096: Vase Balustrade_079
+    4300098: Vase Balustrade_081
+    4300100: Vase Balustrade_083
+    4300102: Vase Balustrade_085
+    4300104: Vase Balustrade_087
+    4300106: Vase Balustrade_089
+    4300108: Vase Balustrade_091
+    4300110: Vase Balustrade_093
+    4300112: Vase Balustrade_095
+    4300114: Colummn#1_002
+    4300116: Component#1_009
+    4300118: Component#1_010
+    4300120: Component#1_013
+    4300122: Component#1_014
+    4300124: Colummn#1_003
+    4300126: Component#1_017
+    4300128: Component#1_018
+    4300130: Component#1_021
+    4300132: Component#1_022
+    4300134: Colummn#1_004
+    4300136: Component#1_025
+    4300138: Component#1_026
+    4300140: Component#1_029
+    4300142: Component#1_030
+    4300144: Window Ornament_001
+    4300146: Parliament Ornament 1_001
+    4300148: Curved Ornament_001
+    4300150: Curved Ornament_003
+    4300152: Window Ornament_004
+    4300154: Parliament Ornament 1_003
+    4300156: Curved Ornament_005
+    4300158: Curved Ornament_007
+    4300160: Window Ornament_007
+    4300162: Parliament Ornament 1_005
+    4300164: Curved Ornament_009
+    4300166: Curved Ornament_011
+    4300168: Vase_001
+    4300170: Vase_002
+    4300172: Vase_003
+    4300174: Vase_004
+    4300176: Group_001
+    4300178: Group_002
+    4300180: Group_004
+    4300182: Group_005
+    4300184: Group_006
+    4300186: Group_007
+    4300188: Group_008
+    4300190: Group_009
+    4300192: Group_011
+    4300194: Group_012
+    4300196: Group_013
+    4300198: Group_014
+    4300200: Group_015
+    4300202: Group_016
+    4300204: Group_017
+    4300206: Group_019
+    4300208: Group_020
+    4300210: Group_021
+    4300212: Group_022
+    4300214: Group_023
+    4300216: Group_024
+    4300218: Group_026
+    4300220: Group_027
+    4300222: Group_028
+    4300224: Group_029
+    4300226: Group_030
+    4300228: Group_031
+    4300230: Group_032
+    4300232: Group_034
+    4300234: Group_035
+    4300236: Group_036
+    4300238: Group_037
+    4300240: Group_038
+    4300242: Group_039
+    4300244: Group_041
+    4300246: Group_042
+    4300248: Group_043
+    4300250: Group_044
+    4300252: Group_045
+    4300254: Group_046
+    4300256: Group_047
+    4300258: Group_049
+    4300260: Group_050
+    4300262: Group_051
+    4300264: Group_052
+    4300266: Group_053
+    4300268: Group_054
+    4300270: Group_056
+    4300272: Group_057
+    4300274: Group_058
+    4300276: Group_059
+    4300278: Group_060
+    4300280: Vase_005
+    4300282: Vase_006
+    4300284: Vase_007
+    4300286: Vase_008
+    4300288: Vase_009
+    4300290: Vase_010
+    4300292: Vase_011
+    4300294: Vase_012
+    4300296: Colummn#1_005
+    4300298: Component#1_033
+    4300300: Component#1_034
+    4300302: Component#1_037
+    4300304: Component#1_038
+    4300306: Balustrade_007
+    4300308: Vase Balustrade_097
+    4300310: Vase Balustrade_099
+    4300312: Vase Balustrade_101
+    4300314: Vase Balustrade_103
+    4300316: Vase Balustrade_105
+    4300318: Vase Balustrade_107
+    4300320: Vase Balustrade_109
+    4300322: Vase Balustrade_111
+    4300324: Vase Balustrade_113
+    4300326: Vase Balustrade_115
+    4300328: Vase Balustrade_117
+    4300330: Vase Balustrade_119
+    4300332: Vase Balustrade_121
+    4300334: Vase Balustrade_123
+    4300336: Vase Balustrade_125
+    4300338: Vase Balustrade_127
+    4300340: Balustrade_009
+    4300342: Vase Balustrade_129
+    4300344: Vase Balustrade_131
+    4300346: Vase Balustrade_133
+    4300348: Vase Balustrade_135
+    4300350: Vase Balustrade_137
+    4300352: Vase Balustrade_139
+    4300354: Vase Balustrade_141
+    4300356: Vase Balustrade_143
+    4300358: Vase Balustrade_145
+    4300360: Vase Balustrade_147
+    4300362: Vase Balustrade_149
+    4300364: Vase Balustrade_151
+    4300366: Vase Balustrade_153
+    4300368: Vase Balustrade_155
+    4300370: Vase Balustrade_157
+    4300372: Vase Balustrade_159
+    4300374: Balustrade_011
+    4300376: Vase Balustrade_161
+    4300378: Vase Balustrade_163
+    4300380: Vase Balustrade_165
+    4300382: Vase Balustrade_167
+    4300384: Vase Balustrade_169
+    4300386: Vase Balustrade_171
+    4300388: Vase Balustrade_173
+    4300390: Vase Balustrade_175
+    4300392: Vase Balustrade_177
+    4300394: Vase Balustrade_179
+    4300396: Vase Balustrade_181
+    4300398: Vase Balustrade_183
+    4300400: Vase Balustrade_185
+    4300402: Vase Balustrade_187
+    4300404: Vase Balustrade_189
+    4300406: Vase Balustrade_191
+    4300408: Colummn#1_006
+    4300410: Component#1_041
+    4300412: Component#1_042
+    4300414: Component#1_045
+    4300416: Component#1_046
+    4300418: Colummn#1_007
+    4300420: Component#1_049
+    4300422: Component#1_050
+    4300424: Component#1_053
+    4300426: Component#1_054
+    4300428: Colummn#1_008
+    4300430: Component#1_057
+    4300432: Component#1_058
+    4300434: Component#1_061
+    4300436: Component#1_062
+    4300438: Window Ornament_010
+    4300440: Parliament Ornament 1_007
+    4300442: Curved Ornament_013
+    4300444: Curved Ornament_015
+    4300446: Window Ornament_013
+    4300448: Parliament Ornament 1_009
+    4300450: Curved Ornament_017
+    4300452: Curved Ornament_019
+    4300454: Window Ornament_016
+    4300456: Parliament Ornament 1_011
+    4300458: Curved Ornament_021
+    4300460: Curved Ornament_023
+    4300462: Vase_013
+    4300464: Vase_014
+    4300466: Vase_015
+    4300468: Vase_016
+    4300470: Vase_017
+    4300472: Vase_018
+    4300474: Vase_019
+    4300476: Vase_020
+    4300478: Vase_021
+    4300480: Vase_022
+    4300482: Group_061
+    4300484: Group_062
+    4300486: Group_064
+    4300488: Group_065
+    4300490: Group_066
+    4300492: Group_067
+    4300494: Group_068
+    4300496: Group_069
+    4300498: Group_071
+    4300500: Group_072
+    4300502: Group_073
+    4300504: Group_074
+    4300506: Group_075
+    4300508: Group_076
+    4300510: Group_077
+    4300512: Group_079
+    4300514: Group_080
+    4300516: Group_081
+    4300518: Group_082
+    4300520: Group_083
+    4300522: Group_084
+    4300524: Group_086
+    4300526: Group_087
+    4300528: Group_088
+    4300530: Group_089
+    4300532: Group_090
+    4300534: Group_091
+    4300536: Group_092
+    4300538: Group_094
+    4300540: Group_095
+    4300542: Group_096
+    4300544: Group_097
+    4300546: Group_098
+    4300548: Group_099
+    4300550: Group_101
+    4300552: Group_102
+    4300554: Group_103
+    4300556: Group_104
+    4300558: Group_105
+    4300560: Vase_023
+    4300562: Group_106
+    4300564: Group_107
+    4300566: Group_109
+    4300568: Group_110
+    4300570: Group_111
+    4300572: Group_112
+    4300574: Group_113
+    4300576: Group_114
+    4300578: Group_116
+    4300580: Group_117
+    4300582: Group_118
+    4300584: Group_119
+    4300586: Group_120
+    4300588: Vase_024
+    4300590: BANK OF NEW ZEAL_001
+    4300592: BANK OF NEW ZEAL_002
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

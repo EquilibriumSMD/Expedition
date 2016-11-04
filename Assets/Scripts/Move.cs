@@ -10,7 +10,7 @@ public class Move : MonoBehaviour {
 	public float inactiveTime; // if action time is less than this time, can't do action
 	public float actionTime;
 	public float rayDistance = 0.1f; // distance center to ground
-	public float jumpSpeed = 6f;
+	public float jumpSpeed = 7f;
 
 	public Vector3 newCenterRun;
 
@@ -45,9 +45,9 @@ public class Move : MonoBehaviour {
 	{
 		Jump ();
 		if (Input.GetAxis ("Vertical") < 0) {
-			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime / 2;
+			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
 		} else {
-			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime;
+			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
 		}
 		if (Input.GetAxis ("Horizontal") > 0) {
 			if (Input.GetAxis ("Vertical") < 0) {
@@ -69,11 +69,16 @@ public class Move : MonoBehaviour {
 			}
 			animator.SetBool("Walking",false);
 		}
+		if (animator.GetBool ("Walking") && animator.GetBool("OnGround")) {
+			animator.speed = 5;
+		} else {
+			animator.speed = 1;
+		}
 	}
 
 	public void Jump () 
 	{
-		rigidBody.AddForce(Vector3.down*jumpSpeed*15);
+		//rigidBody.AddForce(Vector3.down*jumpSpeed*15);
 		if (Input.GetAxis ("Vertical") > 0f)
 		{
 
@@ -86,7 +91,7 @@ public class Move : MonoBehaviour {
 			inactiveTime = Time.time + jumpDelay;
 			goingUp = true;
 			isGround = false;
-			rigidBody.AddForce(Vector3.up*jumpSpeed*170);
+			rigidBody.velocity = Vector3.up*jumpSpeed;
 		}
 	}
 
