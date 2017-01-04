@@ -7,7 +7,7 @@ using System.Linq;
 
 public class Menu : MonoBehaviour {
 
- public Button BotaoJogar,BotaoConfigurar,BotaoSair;
+ public Button BotaoJogar,BotaoBiblioteca,BotaoConfigurar,BotaoSair;
  [Space(20)]
  public Slider BarraVolume;
  public Toggle CaixaModoJanela;
@@ -16,6 +16,7 @@ public class Menu : MonoBehaviour {
  [Space(20)]
  public Text textoVol;
  public string nomeCenaJogo = "Scene1";
+ public string livros = "SceneBooks";
  private string nomeDaCena;
  private float VOLUME;
  private int qualidadeGrafica, modoJanelaAtivo, resolucaoSalveIndex;
@@ -100,6 +101,7 @@ public class Menu : MonoBehaviour {
 
  // =========SETAR BOTOES==========//
  BotaoJogar.onClick = new Button.ButtonClickedEvent();
+ BotaoBiblioteca.onClick = new Button.ButtonClickedEvent();
  BotaoConfigurar.onClick = new Button.ButtonClickedEvent();
  BotaoSair.onClick = new Button.ButtonClickedEvent();
  BotaoVoltar.onClick = new Button.ButtonClickedEvent();
@@ -129,6 +131,7 @@ public class Menu : MonoBehaviour {
  }
  private void Opcoes(bool ativarOP){
  BotaoJogar.gameObject.SetActive (!ativarOP);
+ BotaoBiblioteca.gameObject.SetActive (!ativarOP);
  BotaoConfigurar.gameObject.SetActive (!ativarOP);
  BotaoSair.gameObject.SetActive (!ativarOP);
  //
@@ -171,6 +174,9 @@ public class Menu : MonoBehaviour {
  private void Jogar(){
  SceneManager.LoadScene (nomeCenaJogo);
  }
+ //private void Biblioteca(){
+ //SceneManager.LoadScene (SceneBooks);
+ //}
  private void Sair(){
  Application.Quit ();
  }
