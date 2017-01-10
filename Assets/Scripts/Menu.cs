@@ -8,14 +8,14 @@ using System.Linq;
 public class Menu : MonoBehaviour {
 
  public Button BotaoJogar,BotaoConfigurar,BotaoSair;
-// public Button BotaoBiblioteca;
+ public Button BotaoBiblioteca;
  [Space(20)]
  public Slider BarraVolume;
  public Button BotaoVoltar, BotaoSalvarPref;
  [Space(20)]
  public Text textoVol;
  public string nomeCenaJogo = "Scene1";
-// public string livros = "SceneBooks";
+ public string livros = "SceneBooks";
  private string nomeDaCena;
  private float VOLUME;
 
@@ -42,7 +42,7 @@ public class Menu : MonoBehaviour {
 
      // =========SETAR BOTOES==========//
      BotaoJogar.onClick = new Button.ButtonClickedEvent();
-//     BotaoBiblioteca.onClick = new Button.ButtonClickedEvent();
+     BotaoBiblioteca.onClick = new Button.ButtonClickedEvent();
      BotaoConfigurar.onClick = new Button.ButtonClickedEvent();
      BotaoSair.onClick = new Button.ButtonClickedEvent();
      BotaoVoltar.onClick = new Button.ButtonClickedEvent();
@@ -57,7 +57,7 @@ public class Menu : MonoBehaviour {
 //=========VOIDS DE CHECAGEM==========//
  private void Opcoes(bool ativarOP){
      BotaoJogar.gameObject.SetActive (!ativarOP);
-//     BotaoBiblioteca.gameObject.SetActive (!ativarOP);
+     BotaoBiblioteca.gameObject.SetActive (!ativarOP);
      BotaoConfigurar.gameObject.SetActive (!ativarOP);
      BotaoSair.gameObject.SetActive (!ativarOP);
      textoVol.gameObject.SetActive (ativarOP);
@@ -85,9 +85,10 @@ public class Menu : MonoBehaviour {
  private void Jogar(){
     SceneManager.LoadScene (nomeCenaJogo);
  }
-// private void Biblioteca(){
-//    SceneManager.LoadScene (SceneBooks);
-// }
+
+ private void Biblioteca(){
+    SceneManager.LoadScene (livros);
+ }
  private void Sair(){
     Application.Quit ();
  }
