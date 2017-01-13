@@ -9,7 +9,8 @@ public class NavegacaoBiblioteca : MonoBehaviour {
     
     public Button BotaoAventureiro,BotaoSair;
     [Space(20)]
-    public string livros1 = "Livro1";
+	public string livros1 = "Livro1";
+	public string nomeCena = "Menu";
     
      void Awake(){
         DontDestroyOnLoad (transform.gameObject);
@@ -36,8 +37,8 @@ public class NavegacaoBiblioteca : MonoBehaviour {
     private void Tipo1(){
         SceneManager.LoadScene (livros1);
     }
-    private void Sair(){
-        Application.Quit ();
+	private void Sair(){
+		SceneManager.LoadScene (nomeCena);
     }
     
 }

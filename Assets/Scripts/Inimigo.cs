@@ -13,6 +13,7 @@ public class Inimigo : MonoBehaviour {
 	public float jumpSpeed = 5f; // [Osawa]: Torna o salto menos "rápido", ficou mais orgânico aqui
 	public float radius = 0.5f; // "Raio" da distância percorrida
 
+	public Vector3 arrest = new Vector3();
 	public Vector3 newCenterRun;
 
 	public int jumpTrigger;
@@ -30,7 +31,6 @@ public class Inimigo : MonoBehaviour {
 		jumpTrigger = Animator.StringToHash("Jump");
 		goingUpBool = Animator.StringToHash("GoingUp");
 		isGroundedBool = Animator.StringToHash("IsGrounded");
-
 	}
 
 	// Use this for initialization
@@ -44,24 +44,31 @@ public class Inimigo : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Mathf.Sin(Time.time) < 0) {
-			transform.position += Vector3.left * Mathf.Sin(Time.time) * radius * Time.deltaTime * 5f;
+		if (arrest == new Vector3()) {
+			if (Mathf.Cos (Time.time) < 0) {
+				transform.position += Vector3.left * Mathf.Cos (Time.time) * radius * Time.deltaTime * 5f;
+			} else {
+				transform.position += Vector3.left * Mathf.Cos (Time.time) * radius * Time.deltaTime * 5f;
+			}
+			if (Mathf.Cos (Time.time) > 0) {
+				animator.SetBool ("Walking", true);
+				transform.rotation = new Quaternion (0, -90, 0, 90);
+			} else if (Mathf.Cos (Time.time) < 0) {
+				animator.SetBool ("Walking", true);
+				transform.rotation = new Quaternion (0, 90, 0, 90);
+			} else {
+				animator.SetBool ("Walking", false);
+			}
+			if (animator.GetBool ("Walking") && animator.GetBool ("OnGround")) {
+				animator.speed = 5;
+			} else {
+				animator.speed = 1;
+			}
 		} else {
-			transform.position += Vector3.left * Mathf.Sin(Time.time) * radius * Time.deltaTime * 5f;
-		}
-		if (Mathf.Sin(Time.time) > 0) {
-			animator.SetBool("Walking",true);
-			transform.rotation = new Quaternion (0, -90, 0, 90);
-		} else if (Mathf.Sin(Time.time)  < 0) {
-			animator.SetBool("Walking",true);
-			transform.rotation = new Quaternion (0, 90, 0, 90);
-		} else{
-			animator.SetBool("Walking",false);
-		}
-		if (animator.GetBool ("Walking") && animator.GetBool("OnGround")) {
-			animator.speed = 5;
-		} else {
-			animator.speed = 1;
+			transform.position = Vector3.MoveTowards(transform.position, arrest, Time.deltaTime);
+			if(Vector3.Distance(transform.position, arrest) < 0.1f){
+				Application.LoadLevel ("GameOver");
+			}
 		}
 	}
 
@@ -84,5 +91,14 @@ public class Inimigo : MonoBehaviour {
 			goingUp = false;
 		}
 		animator.SetBool ("OnGround", isGround);
+	}
+
+	void OnTriggerEnter(Collider other)
+	{
+		if((other.GetComponent<Collider>().CompareTag("Player")) && arrest == new Vector3())
+		{
+			other.GetComponent<Move> ().busted = true;
+			arrest = other.GetComponent<Transform> ().position;
+		}
 	}
 }

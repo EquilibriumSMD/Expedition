@@ -44,64 +44,64 @@ public class Move : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		Jump ();
-		if (Input.GetAxis ("Vertical") < 0 && !busted) {
-			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
-		} else if (!busted){
-			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
-		}
-		if (Input.GetAxis ("Horizontal") > 0) {
+		if (!busted) {
+			Jump ();
 			if (Input.GetAxis ("Vertical") < 0) {
-				animator.SetInteger ("Crouched", 1);
-			}
-            else
-            {
-                animator.SetInteger("Crouched", 0); //Retornar a andar ereto mesmo em movimento
-            }
-			animator.SetBool("Walking",true);
-			transform.rotation = new Quaternion (0, -90, 0, 90);
-		} else if (Input.GetAxis ("Horizontal") < 0) {
-			if (Input.GetAxis ("Vertical") < 0) {
-				animator.SetInteger ("Crouched", -1);
-			}
-            else
-            {
-                animator.SetInteger("Crouched", 0);
-            }
-            animator.SetBool("Walking",true);
-			transform.rotation = new Quaternion (0, 90, 0, 90);
-		} else{
-			if (Input.GetAxisRaw ("Vertical") < 0) {
-				animator.SetInteger ("Crouched", 3);
+				transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
 			} else {
-				animator.SetInteger ("Crouched", 0);
+				transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
 			}
-			animator.SetBool("Walking",false);
-		}
-		if (animator.GetBool ("Walking") && animator.GetBool("OnGround")) {
-			animator.speed = 5;
+			if (Input.GetAxis ("Horizontal") > 0) {
+				if (Input.GetAxis ("Vertical") < 0) {
+					animator.SetInteger ("Crouched", 1);
+				} else {
+					animator.SetInteger ("Crouched", 0); //Retornar a andar ereto mesmo em movimento
+				}
+				animator.SetBool ("Walking", true);
+				transform.rotation = new Quaternion (0, -90, 0, 90);
+			} else if (Input.GetAxis ("Horizontal") < 0) {
+				if (Input.GetAxis ("Vertical") < 0) {
+					animator.SetInteger ("Crouched", -1);
+				} else {
+					animator.SetInteger ("Crouched", 0);
+				}
+				animator.SetBool ("Walking", true);
+				transform.rotation = new Quaternion (0, 90, 0, 90);
+			} else {
+				if (Input.GetAxisRaw ("Vertical") < 0) {
+					animator.SetInteger ("Crouched", 3);
+				} else {
+					animator.SetInteger ("Crouched", 0);
+				}
+				animator.SetBool ("Walking", false);
+			}
+			if (animator.GetBool ("Walking") && animator.GetBool ("OnGround")) {
+				animator.speed = 5;
+			} else {
+				animator.speed = 1;
+			}
 		} else {
-			animator.speed = 1;
+			animator.SetBool ("Walking", false);
 		}
 	}
 
 	public void Jump () 
 	{
 		//rigidBody.AddForce(Vector3.down*jumpSpeed*15);
-		if (Input.GetAxis ("Vertical") > 0f)
-		{
+			if (Input.GetAxis ("Vertical") > 0f)
+			{
 
-			if (Time.time < inactiveTime) {
-				return;
+				if (Time.time < inactiveTime) {
+					return;
+				}
+				else if (isGround == false) {
+					return;
+				}
+				inactiveTime = Time.time + jumpDelay;
+				goingUp = true;
+				isGround = false;
+				rigidBody.velocity = Vector3.up*jumpSpeed;
 			}
-			else if (isGround == false) {
-				return;
-			}
-			inactiveTime = Time.time + jumpDelay;
-			goingUp = true;
-			isGround = false;
-			rigidBody.velocity = Vector3.up*jumpSpeed;
-		}
 	}
 
 	void FixedUpdate () 
