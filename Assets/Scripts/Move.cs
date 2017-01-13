@@ -11,6 +11,7 @@ public class Move : MonoBehaviour {
 	public float actionTime;
 	public float rayDistance = 0.1f; // distance center to ground
 	public float jumpSpeed = 5f; // [Osawa]: Torna o salto menos "rápido", ficou mais orgânico aqui
+	public bool busted;
 
 	public Vector3 newCenterRun;
 
@@ -44,9 +45,9 @@ public class Move : MonoBehaviour {
 	void Update () 
 	{
 		Jump ();
-		if (Input.GetAxis ("Vertical") < 0) {
+		if (Input.GetAxis ("Vertical") < 0 && !busted) {
 			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
-		} else {
+		} else if (!busted){
 			transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
 		}
 		if (Input.GetAxis ("Horizontal") > 0) {

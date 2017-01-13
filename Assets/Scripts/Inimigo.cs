@@ -1,27 +1,88 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
+using System.Timers;
 
 public class Inimigo : MonoBehaviour {
+	public bool isGround;
+	public bool goingUp; // true going up, false going down
+	public float jumpDelay = 1.5f; // stop fast double jumps [Osawa]: Com 1.5f ficou melhor pois com o valor anterior de 0.3 tava muito rápido e causava salto duplo
+	public float inactiveTime; // if action time is less than this time, can't do action
+	public float actionTime;
+	public float rayDistance = 0.1f; // distance center to ground
+	public float jumpSpeed = 5f; // [Osawa]: Torna o salto menos "rápido", ficou mais orgânico aqui
+	public float radius = 0.5f; // "Raio" da distância percorrida
 
+	public Vector3 newCenterRun;
 
-	/** Para acesso mais eficiente ao componente Animator
-	 */
-	private Animator animator;
+	public int jumpTrigger;
+	public int isGroundedBool;
+	public int goingUpBool;
+
 	private Rigidbody rigidBody;
-	private Collider collider;
-	public Vector3 startPosition;
-	public float radius;
+	private Animator animator;
+
+
+	private System.Timers.Timer timer = new System.Timers.Timer(4000);
+
+	void Awake () 
+	{
+		jumpTrigger = Animator.StringToHash("Jump");
+		goingUpBool = Animator.StringToHash("GoingUp");
+		isGroundedBool = Animator.StringToHash("IsGrounded");
+
+	}
 
 	// Use this for initialization
-	void Start () {
-		animator = GetComponent<Animator> ();
-		collider = GetComponent<Collider> ();
-		rigidBody = GetComponent<Rigidbody> ();
-		startPosition = transform.localPosition;
+	void Start () 
+	{
+		rigidBody = GetComponent<Rigidbody>();
+		animator = GetComponent<Animator>();
+		inactiveTime = Time.time;
 	}
-	
+
 	// Update is called once per frame
-	void Update () {
-		transform.localPosition = startPosition + Vector3.left *  Mathf.Sin(Time.time) * radius * Time.deltaTime;
+	void Update () 
+	{
+		if (Mathf.Sin(Time.time) < 0) {
+			transform.position += Vector3.left * Mathf.Sin(Time.time) * radius * Time.deltaTime * 5f;
+		} else {
+			transform.position += Vector3.left * Mathf.Sin(Time.time) * radius * Time.deltaTime * 5f;
+		}
+		if (Mathf.Sin(Time.time) > 0) {
+			animator.SetBool("Walking",true);
+			transform.rotation = new Quaternion (0, -90, 0, 90);
+		} else if (Mathf.Sin(Time.time)  < 0) {
+			animator.SetBool("Walking",true);
+			transform.rotation = new Quaternion (0, 90, 0, 90);
+		} else{
+			animator.SetBool("Walking",false);
+		}
+		if (animator.GetBool ("Walking") && animator.GetBool("OnGround")) {
+			animator.speed = 5;
+		} else {
+			animator.speed = 1;
+		}
+	}
+
+	void FixedUpdate () 
+	{
+		// check if character is on ground
+		if (Physics.Raycast (transform.position + (Vector3.up * rayDistance), Vector3.down, rayDistance * 2)) 
+		{
+			isGround = true;
+		}
+		else {
+			isGround = false;
+		}
+
+		// check if character is going up or down
+		if (rigidBody.velocity.y > 0) {
+			goingUp = true;
+		}
+		else {
+			goingUp = false;
+		}
+		animator.SetBool ("OnGround", isGround);
 	}
 }
