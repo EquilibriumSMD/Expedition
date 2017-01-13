@@ -48,6 +48,7 @@ public class Menu : MonoBehaviour {
      BotaoVoltar.onClick = new Button.ButtonClickedEvent();
      BotaoSalvarPref.onClick = new Button.ButtonClickedEvent();
      BotaoJogar.onClick.AddListener(() => Jogar());
+     BotaoBiblioteca.onClick.AddListener(() => Biblioteca());
      BotaoConfigurar.onClick.AddListener(() => Opcoes(true));
      BotaoSair.onClick.AddListener(() => Sair());
      BotaoVoltar.onClick.AddListener(() => Opcoes(false));
