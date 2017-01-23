@@ -12,8 +12,11 @@ public class Move : MonoBehaviour {
 	public float rayDistance = 0.1f; // distance center to ground
 	public float jumpSpeed = 5f; // [Osawa]: Torna o salto menos "rápido", ficou mais orgânico aqui
 	public bool busted;
+	//public bool jgPausado;
 
 	public Vector3 newCenterRun;
+
+	//public GameObject txtPausar;
 
 	public int jumpTrigger;
 	public int isGroundedBool;
@@ -39,11 +42,28 @@ public class Move : MonoBehaviour {
 		rigidBody = GetComponent<Rigidbody>();
 		animator = GetComponent<Animator>();
  		inactiveTime = Time.time;
+		//txtPausar.SetActive (false);
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
+		/*if (Input.GetKeyUp (KeyCode.Escape)) 
+		{
+			jgPausado = !jgPausado; //Inverte o valor do booleano
+			txtPausar.SetActive (jgPausado);
+			if (jgPausado) 
+			{
+				Debug.Log ("Pausou");
+				Time.timeScale = 0;
+			}
+			else 
+			{
+				Debug.Log ("Resumiu");
+				Time.timeScale = 1;
+			}
+		}*/
+
 		if (!busted) {
 			Jump ();
 			if (Input.GetAxis ("Vertical") < 0) {
