@@ -7,6 +7,9 @@ using System.Linq;
 
 public class Menu : MonoBehaviour {
 
+	SceneFader fadeScr;
+	Fading fadingCena;
+
  public Button BotaoJogar,BotaoConfigurar,BotaoSair;
  public Button BotaoBiblioteca;
  [Space(20)]
@@ -21,6 +24,8 @@ public class Menu : MonoBehaviour {
 
  void Awake(){
     DontDestroyOnLoad (transform.gameObject);
+	//fadeScr = GameObject.FindObjectOfType<SceneFading> ();
+	fadingCena = GameObject.FindObjectOfType<Fading> ();
  }
 
  void Start () {
@@ -83,9 +88,20 @@ public class Menu : MonoBehaviour {
          Destroy (gameObject);
      }
  }
+
  private void Jogar(){
-    SceneManager.LoadScene (nomeCenaJogo);
+    //SceneManager.LoadScene (nomeCenaJogo); //[osawa]
+		//fadeScr.EndScene(1);
+		fadingCena.mudarCena (1);
+	//	fadeJogar();
+
  }
+	/*public IEnumerator fadeJogar()
+	{
+		float fadeTime = GameObject.Find("UIMenu").GetComponent<Fader>().beginFade(1);
+		yield return new WaitForSeconds (fadeTime);
+		SceneManager.LoadScene (nomeCenaJogo);
+	}*/
 
  private void Biblioteca(){
     SceneManager.LoadScene (livros);

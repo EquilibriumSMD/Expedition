@@ -443,6 +443,7 @@ GameObject:
   - 92: {fileID: 39687431}
   - 81: {fileID: 39687430}
   - 114: {fileID: 39687434}
+  - 114: {fileID: 39687435}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -534,6 +535,19 @@ MonoBehaviour:
   diffX: 0
   diffY: 0
   diffZ: 0
+--- !u!114 &39687435
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 39687428}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2e15a07dfbbdef4ea613288c31ba8e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeOutTexture: {fileID: 2800000, guid: 12b0ad5d598952a4494f8854b8861f5c, type: 3}
+  fadeSpeed: 0.8
 --- !u!1 &47191236
 GameObject:
   m_ObjectHideFlags: 0
@@ -9131,7 +9145,6 @@ GameObject:
   - 223: {fileID: 1311086935}
   - 114: {fileID: 1311086934}
   - 114: {fileID: 1311086933}
-  - 114: {fileID: 1311086937}
   m_Layer: 5
   m_Name: campoPausar
   m_TagString: Untagged
@@ -9214,19 +9227,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!114 &1311086937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1311086932}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7c432f45f857f541ab070a9848539dc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jgPausado: 0
-  campoPausar: {fileID: 1318012540}
 --- !u!1 &1317462225
 GameObject:
   m_ObjectHideFlags: 0

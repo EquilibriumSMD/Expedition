@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class pausar : MonoBehaviour 
+public class Pausar : MonoBehaviour 
 {
 
 	public bool jgPausado;
