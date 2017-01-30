@@ -21,6 +21,7 @@ public class Move : MonoBehaviour {
 	public int jumpTrigger;
 	public int isGroundedBool;
 	public int goingUpBool;
+	public bool axis;
 
 	private Rigidbody rigidBody;
 	private Animator animator;
@@ -42,6 +43,7 @@ public class Move : MonoBehaviour {
 		rigidBody = GetComponent<Rigidbody>();
 		animator = GetComponent<Animator>();
  		inactiveTime = Time.time;
+		axis = true;
 		//txtPausar.SetActive (false);
 	}
 	
@@ -66,10 +68,18 @@ public class Move : MonoBehaviour {
 
 		if (!busted) {
 			Jump ();
-			if (Input.GetAxis ("Vertical") < 0) {
-				transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
+			if (axis) {
+				if (Input.GetAxis ("Vertical") < 0) {
+					transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
+				} else {
+					transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
+				}
 			} else {
-				transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
+				if (Input.GetAxis ("Vertical") < 0) {
+					transform.position += Vector3.back * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
+				} else {
+					transform.position += Vector3.back * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
+				}
 			}
 			if (Input.GetAxis ("Horizontal") > 0) {
 				if (Input.GetAxis ("Vertical") < 0) {

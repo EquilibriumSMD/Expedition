@@ -66,7 +66,7 @@ public class Inimigo : MonoBehaviour {
 			}
 		} else {
 			transform.position = Vector3.MoveTowards(transform.position, arrest, Time.deltaTime);
-			if(Vector3.Distance(transform.position, arrest) < 0.1f){
+			if(Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(arrest.x, 0, arrest.z)) < 0.3f){
 				Application.LoadLevel ("GameOver");
 			}
 		}
