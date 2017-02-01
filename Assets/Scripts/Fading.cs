@@ -43,7 +43,7 @@ public class Fading : MonoBehaviour
 		float fadeTime = GameObject.Find("Main Camera").GetComponent<Fading>().beginFade(1);
 		//float fadeTime = GameObject.FindObjectOfType<Fading>;
 		yield return new WaitForSeconds (fadeTime);
-		SceneManager.LoadScene (numCena);
+		SceneManager.LoadScene (GameObject.Find("UIMenu").GetComponent<Menu>().nomeCenaJogo);
 	}
 
 	public void mudarCena(int numCena)
