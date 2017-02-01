@@ -876,7 +876,7 @@ MonoBehaviour:
   BotaoVoltar: {fileID: 1304754322}
   BotaoSalvarPref: {fileID: 524879319}
   textoVol: {fileID: 460416861}
-  nomeCenaJogo: Scene1
+  nomeCenaJogo: Loading
   livros: SceneBooks
 --- !u!1 &869954832
 GameObject:
