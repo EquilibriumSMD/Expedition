@@ -76,7 +76,7 @@ public class Move : MonoBehaviour {
 					transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
 				}
 			} else {
-				if (Input.GetAxis ("Vertical") < 0) {
+				if (Input.GetAxis ("Vertical") > 0) {
 					transform.position += Vector3.back * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
 				} else {
 					transform.position += Vector3.back * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
