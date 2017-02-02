@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 5da8eb0e473b0dd4f8499bfd4971c905
-timeCreated: 1478268774
+guid: c8699b17ebb24db45815d44399f706d9
+timeCreated: 1485995989
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -158,7 +158,7 @@ ModelImporter:
     4300008: Shoes
     4300010: Tops
     4300012: Beards
-    7400000: climbing_ladder_inPlace
+    7400000: climbing_ladder_inPlace1
     9500000: //RootNode
     13700000: Beards
     13700002: Body
@@ -189,10 +189,10 @@ ModelImporter:
     extraExposedTransformPaths: []
     clipAnimations:
     - serializedVersion: 16
-      name: climbing_ladder_inPlace
-      takeName: mixamo.com
+      name: climbing_ladder_inPlace1
+      takeName: Take 001
       firstFrame: 0
-      lastFrame: 23
+      lastFrame: 100
       wrapMode: 0
       orientationOffsetY: 0
       level: 0

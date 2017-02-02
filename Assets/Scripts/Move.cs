@@ -10,7 +10,8 @@ public class Move : MonoBehaviour {
 	public float inactiveTime; // if action time is less than this time, can't do action
 	public float actionTime;
 	public float rayDistance = 0.1f; // distance center to ground
-	public float jumpSpeed = 5f; // [Osawa]: Torna o salto menos "rápido", ficou mais orgânico aqui
+	public float jumpSpeed = 3f; // [Osawa]: Torna o salto menos "rápido", ficou mais orgânico aqui PS.[Álvaro] 3 não vai a estratosfera
+	public bool escalada;
 	public bool busted;
 	//public bool jgPausado;
 
@@ -88,7 +89,11 @@ public class Move : MonoBehaviour {
 					animator.SetInteger ("Crouched", 0); //Retornar a andar ereto mesmo em movimento
 				}
 				animator.SetBool ("Walking", true);
-				transform.rotation = new Quaternion (0, -90, 0, 90);
+					if (axis) {
+						transform.rotation = Quaternion.Euler (0, 270, 0);
+					} else {
+						transform.rotation = Quaternion.Euler (0, 180, 0);
+					}
 			} else if (Input.GetAxis ("Horizontal") < 0) {
 				if (Input.GetAxis ("Vertical") < 0) {
 					animator.SetInteger ("Crouched", -1);
@@ -96,7 +101,11 @@ public class Move : MonoBehaviour {
 					animator.SetInteger ("Crouched", 0);
 				}
 				animator.SetBool ("Walking", true);
-				transform.rotation = new Quaternion (0, 90, 0, 90);
+					if (axis) {
+						transform.rotation = Quaternion.Euler (0, 90, 0);
+					} else {
+						transform.rotation = Quaternion.Euler (0, 0, 0);
+					}
 			} else {
 				if (Input.GetAxisRaw ("Vertical") < 0) {
 					animator.SetInteger ("Crouched", 3);
@@ -118,20 +127,24 @@ public class Move : MonoBehaviour {
 	public void Jump () 
 	{
 		//rigidBody.AddForce(Vector3.down*jumpSpeed*15);
-			if (Input.GetAxis ("Vertical") > 0f)
-			{
+		if (Input.GetAxis ("Vertical") > 0f && !escalada) {
 
-				if (Time.time < inactiveTime) {
-					return;
-				}
-				else if (isGround == false) {
-					return;
-				}
-				inactiveTime = Time.time + jumpDelay;
-				goingUp = true;
-				isGround = false;
-				rigidBody.velocity = Vector3.up*jumpSpeed;
+			if (Time.time < inactiveTime) {
+				return;
+			} else if (isGround == false) {
+				return;
 			}
+			inactiveTime = Time.time + jumpDelay;
+			goingUp = true;
+			isGround = false;
+			rigidBody.velocity = Vector3.up * jumpSpeed;
+		} else {
+			if (Input.GetAxis ("Vertical") > 0f) {
+				rigidBody.velocity = Vector3.up;
+			} else if (Input.GetAxis ("Vertical") < 0f) {
+				rigidBody.velocity = Vector3.down;
+			}
+		}
 	}
 
 	void FixedUpdate () 
@@ -153,5 +166,21 @@ public class Move : MonoBehaviour {
 			goingUp = false;
 		}
 		animator.SetBool ("OnGround", isGround);
+	}
+
+	void OnTriggerEnter (Collider other){
+		if(other.CompareTag("Escada")){
+			escalada = true;
+			animator.SetBool ("escalando", true);
+			rigidBody.useGravity = false;
+		}
+	}
+
+	void OnTriggerExit (Collider other){
+		if(other.CompareTag("Escada")){
+			escalada = false;
+			animator.SetBool ("escalando", false);
+			rigidBody.useGravity = true;
+		}
 	}
 }
