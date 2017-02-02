@@ -13,11 +13,11 @@ public class Move : MonoBehaviour {
 	public float jumpSpeed = 3f; // [Osawa]: Torna o salto menos "rápido", ficou mais orgânico aqui PS.[Álvaro] 3 não vai a estratosfera
 	public bool escalada;
 	public bool busted;
-	//public bool jgPausado;
+	public bool jgPausado;
 
 	public Vector3 newCenterRun;
 
-	//public GameObject txtPausar;
+	public GameObject txtPausar;
 
 	public int jumpTrigger;
 	public int isGroundedBool;
@@ -51,7 +51,7 @@ public class Move : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		/*if (Input.GetKeyUp (KeyCode.Escape)) 
+		if (Input.GetKeyUp (KeyCode.Escape)) 
 		{
 			jgPausado = !jgPausado; //Inverte o valor do booleano
 			txtPausar.SetActive (jgPausado);
@@ -65,7 +65,7 @@ public class Move : MonoBehaviour {
 				Debug.Log ("Resumiu");
 				Time.timeScale = 1;
 			}
-		}*/
+		}
 
 		if (!busted) {
 			Jump ();
@@ -77,9 +77,9 @@ public class Move : MonoBehaviour {
 				}
 			} else {
 				if (Input.GetAxis ("Vertical") > 0) {
-					transform.position += Vector3.back * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
+					transform.position += Vector3.forward * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
 				} else {
-					transform.position += Vector3.back * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
+					transform.position += Vector3.forward * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
 				}
 			}
 			if (Input.GetAxis ("Horizontal") > 0) {
@@ -92,7 +92,7 @@ public class Move : MonoBehaviour {
 					if (axis) {
 						transform.rotation = Quaternion.Euler (0, 270, 0);
 					} else {
-						transform.rotation = Quaternion.Euler (0, 180, 0);
+						transform.rotation = Quaternion.Euler (0, 0, 0);
 					}
 			} else if (Input.GetAxis ("Horizontal") < 0) {
 				if (Input.GetAxis ("Vertical") < 0) {
@@ -104,7 +104,7 @@ public class Move : MonoBehaviour {
 					if (axis) {
 						transform.rotation = Quaternion.Euler (0, 90, 0);
 					} else {
-						transform.rotation = Quaternion.Euler (0, 0, 0);
+						transform.rotation = Quaternion.Euler (0, 180, 0);
 					}
 			} else {
 				if (Input.GetAxisRaw ("Vertical") < 0) {

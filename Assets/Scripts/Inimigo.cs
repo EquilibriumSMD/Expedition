@@ -12,6 +12,7 @@ public class Inimigo : MonoBehaviour {
 	public float rayDistance = 0.1f; // distance center to ground
 	public float jumpSpeed = 5f; // [Osawa]: Torna o salto menos "rápido", ficou mais orgânico aqui
 	public float radius = 0.5f; // "Raio" da distância percorrida
+	private float starTime;
 
 	public Vector3 arrest = new Vector3();
 	public Vector3 newCenterRun;
@@ -19,6 +20,7 @@ public class Inimigo : MonoBehaviour {
 	public int jumpTrigger;
 	public int isGroundedBool;
 	public int goingUpBool;
+	public bool axis;
 
 	private Rigidbody rigidBody;
 	private Animator animator;
@@ -39,23 +41,40 @@ public class Inimigo : MonoBehaviour {
 		rigidBody = GetComponent<Rigidbody>();
 		animator = GetComponent<Animator>();
 		inactiveTime = Time.time;
+		starTime = Time.time;
 	}
 
 	// Update is called once per frame
 	void Update () 
 	{
 		if (arrest == new Vector3()) {
-			if (Mathf.Cos (Time.time) < 0) {
-				transform.position += Vector3.left * Mathf.Cos (Time.time) * radius * Time.deltaTime * 5f;
+			if (axis) {
+				if (Mathf.Cos (starTime - Time.time) < 0) {
+					transform.position += Vector3.left * Mathf.Cos (starTime - Time.time) * radius * Time.deltaTime * 5f;
+				} else {
+					transform.position += Vector3.left * Mathf.Cos (starTime - Time.time) * radius * Time.deltaTime * 5f;
+				}
 			} else {
-				transform.position += Vector3.left * Mathf.Cos (Time.time) * radius * Time.deltaTime * 5f;
+				if (Mathf.Cos (starTime - Time.time) < 0) {
+					transform.position += Vector3.back * Mathf.Cos (starTime - Time.time) * radius * Time.deltaTime * 5f;
+				} else {
+					transform.position += Vector3.back * Mathf.Cos (starTime - Time.time) * radius * Time.deltaTime * 5f;
+				}
 			}
-			if (Mathf.Cos (Time.time) > 0) {
+			if (Mathf.Cos (starTime - Time.time) > 0) {
 				animator.SetBool ("Walking", true);
-				transform.rotation = new Quaternion (0, -90, 0, 90);
-			} else if (Mathf.Cos (Time.time) < 0) {
+				if (axis) {
+					transform.rotation = Quaternion.Euler (0, 270, 0);
+				} else {
+					transform.rotation = Quaternion.Euler (0, 180, 0);
+				}
+			} else if (Mathf.Cos (starTime - Time.time) < 0) {
 				animator.SetBool ("Walking", true);
-				transform.rotation = new Quaternion (0, 90, 0, 90);
+				if (axis) {
+					transform.rotation = Quaternion.Euler (0, 90, 0);
+				} else {
+					transform.rotation = Quaternion.Euler (0, 0, 0);
+				}
 			} else {
 				animator.SetBool ("Walking", false);
 			}
