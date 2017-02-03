@@ -689,11 +689,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   escolha1: {fileID: 1837737001}
   escolha2: {fileID: 1342557688}
-  escolha3: {fileID: 0}
-  escolha4: {fileID: 0}
-  decisa5: {fileID: 0}
-  escolha6: {fileID: 0}
-  nomeCena: 
+  option: 0
 --- !u!114 &2011369999
 MonoBehaviour:
   m_ObjectHideFlags: 0
