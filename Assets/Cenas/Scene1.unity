@@ -996,6 +996,18 @@ Prefab:
       propertyPath: m_TagString
       value: Escada
       objectReference: {fileID: 0}
+    - target: {fileID: 4000011656409642, guid: ca68c5e942819a74b8ab2a68799cbd1c, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -1.5741
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011656409642, guid: ca68c5e942819a74b8ab2a68799cbd1c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -98.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000011656409642, guid: ca68c5e942819a74b8ab2a68799cbd1c, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 92.452126
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114000011441534926, guid: ca68c5e942819a74b8ab2a68799cbd1c, type: 2}
     - {fileID: 114000013253817462, guid: ca68c5e942819a74b8ab2a68799cbd1c, type: 2}

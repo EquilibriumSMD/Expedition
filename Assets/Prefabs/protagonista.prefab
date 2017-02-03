@@ -1806,7 +1806,7 @@ Transform:
   m_GameObject: {fileID: 1000010604473304}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 15.36, y: 7.66, z: 1.46}
-  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
   m_Children:
   - {fileID: 4000013941305268}
@@ -2192,7 +2192,9 @@ MonoBehaviour:
   jumpSpeed: 3
   escalada: 0
   busted: 0
+  jgPausado: 0
   newCenterRun: {x: 0, y: 0, z: 0}
+  txtPausar: {fileID: 0}
   jumpTrigger: 0
   isGroundedBool: 0
   goingUpBool: 0
