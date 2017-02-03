@@ -26,10 +26,6 @@ public class Load : MonoBehaviour {
 	[SerializeField]
 	private Text loadingText;
 
-	AsyncOperation async = null;
-	public Texture ProgressBarEmpty;
-	public Texture ProgressBarFull;
-
 
 	void Start() {
 		scene = Menu.nextScene;
@@ -74,7 +70,7 @@ public class Load : MonoBehaviour {
 		yield return new WaitForSeconds(1);
 
 		// Start an asynchronous operation to load the scene that was passed to the LoadNewScene coroutine.
-		async = Application.LoadLevelAsync(scene);
+		AsyncOperation async = Application.LoadLevelAsync(scene);
 
 		// While the asynchronous operation to load the new scene is not yet complete, continue waiting until it's done.
 		while (!async.isDone) {
