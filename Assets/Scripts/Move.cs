@@ -22,6 +22,7 @@ public class Move : MonoBehaviour {
 	public int jumpTrigger;
 	public int isGroundedBool;
 	public int goingUpBool;
+	//public int backForward = 1;
 	public bool axis;
 
 	private Rigidbody rigidBody;
@@ -122,11 +123,17 @@ public class Move : MonoBehaviour {
 		} else {
 			animator.SetBool ("Walking", false);
 		}
+		if(this.transform.position.y < -1.5f){
+			Application.LoadLevel ("GameOver");
+		}
 	}
 
 	public void Jump () 
 	{
 		//rigidBody.AddForce(Vector3.down*jumpSpeed*15);
+		if (Input.GetAxis ("Vertical") > 0f && escalada) {
+			rigidBody.velocity = Vector3.up;
+		}
 		if (Input.GetAxis ("Vertical") > 0f && !escalada) {
 
 			if (Time.time < inactiveTime) {
@@ -138,12 +145,6 @@ public class Move : MonoBehaviour {
 			goingUp = true;
 			isGround = false;
 			rigidBody.velocity = Vector3.up * jumpSpeed;
-		} else {
-			if (Input.GetAxis ("Vertical") > 0f) {
-				rigidBody.velocity = Vector3.up;
-			} else if (Input.GetAxis ("Vertical") < 0f) {
-				rigidBody.velocity = Vector3.down;
-			}
 		}
 	}
 

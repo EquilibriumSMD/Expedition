@@ -2363,10 +2363,9 @@ MonoBehaviour:
   jumpDelay: 1.5
   inactiveTime: 0
   actionTime: 0
-  rayDistance: 0.1
+  rayDistance: 0.3
   jumpSpeed: 5
   radius: 0.1
-  arrest: {x: 0, y: 0, z: 0}
   newCenterRun: {x: 0, y: 0, z: 0}
   jumpTrigger: 0
   isGroundedBool: 0

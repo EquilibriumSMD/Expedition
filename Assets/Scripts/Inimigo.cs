@@ -14,7 +14,7 @@ public class Inimigo : MonoBehaviour {
 	public float radius = 0.5f; // "Raio" da distância percorrida
 	private float starTime;
 
-	public Vector3 arrest = new Vector3();
+	static Vector3 arrest = new Vector3();
 	public Vector3 newCenterRun;
 
 	public int jumpTrigger;
@@ -85,7 +85,8 @@ public class Inimigo : MonoBehaviour {
 			}
 		} else {
 			transform.position = Vector3.MoveTowards(transform.position, arrest, Time.deltaTime);
-			if(Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(arrest.x, 0, arrest.z)) < 0.3f){
+			if(Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z), new Vector3(arrest.x, 0, arrest.z)) < 0.5f){
+				arrest = new Vector3();
 				Application.LoadLevel ("GameOver");
 			}
 		}
