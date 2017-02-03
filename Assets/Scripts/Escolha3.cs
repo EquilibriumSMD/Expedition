@@ -12,10 +12,10 @@ public class Escolha3 : MonoBehaviour {
 	void Start () {
 	   // =========SETAR BOTOES==========//
 		escolha5.onClick = new Button.ButtonClickedEvent();
-		escolha5.onClick.AddListener(() => changeFase(5,"Scene3")); //cena do trem
+		escolha5.onClick.AddListener(() => changeFase(5,"Scene23")); //cena do trem
         
         escolha6.onClick = new Button.ButtonClickedEvent();
-		escolha6.onClick.AddListener(() => changeFase(6,"Scene1")); //cena do deserto
+		escolha6.onClick.AddListener(() => changeFase(6,"Scene21")); //cena do deserto
 	}
 	
 	//===========VOIDS NORMAIS=========//
