@@ -23,6 +23,10 @@ public class Escolha3 : MonoBehaviour {
 		Debug.Log("Opção escolhida"+option3);
 
 		Menu.nextScene = nomeCena;
-		SceneManager.LoadScene ("Loading");
+		if (option3 == 5) {
+			SceneManager.LoadScene ("Documento 4");
+		} else {
+			SceneManager.LoadScene ("Documento 5");
+		}
 	}
 }

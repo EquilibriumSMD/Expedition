@@ -26,6 +26,10 @@ public class Escolha1 : MonoBehaviour {
         Debug.Log("Opção escolhida"+option);
 
 		Menu.nextScene = nomeCena;
-		SceneManager.LoadScene ("Loading");
+		if (option == 1) {
+			SceneManager.LoadScene ("Pergaminho 3");
+		} else {
+			SceneManager.LoadScene ("Pergaminho 4");
+		}
 	}
 }
