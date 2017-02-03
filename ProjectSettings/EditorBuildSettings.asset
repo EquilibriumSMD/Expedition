@@ -10,17 +10,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Scene1.unity
   - enabled: 1
-    path: Assets/Cenas/SceneBooks.unity
+    path: Assets/Cenas/Scene2.unity
   - enabled: 1
-    path: Assets/Cenas/Livro1.unity
+    path: Assets/Cenas/Scene3.unity
+  - enabled: 1
+    path: Assets/Cenas/SceneBooks.unity
   - enabled: 1
     path: Assets/Cenas/GameOver.unity
   - enabled: 1
+    path: Assets/Cenas/Livro1.unity
+  - enabled: 1
     path: Assets/Cenas/Loading.unity
-  - enabled: 1
-    path: Assets/Cenas/Win.unity
-  - enabled: 1
-    path: Assets/Cenas/Scene2.unity
   - enabled: 1
     path: Assets/Cenas/Escolha 1.unity
   - enabled: 1

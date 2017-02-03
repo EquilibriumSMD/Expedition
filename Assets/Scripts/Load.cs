@@ -8,14 +8,13 @@ public class Load : MonoBehaviour {
          Async = Application.LoadLevelAsync (i);
          yield return Async;
      }
- 
- 
-     void OnGUI () {
-         if (Async != null) {
-             GUI.DrawTexture (new Rect (0, 0, 100, 50), ProgressBarEmpty);
-             GUI.DrawTexture (new Rect (0, 0, 100* Async.progress, 50), ProgressBarFull);
-         }
-     }
+
+	void OnGUI () {
+		if (async != null) {
+			GUI.DrawTexture (new Rect (0, 0, 100, 50), ProgressBarEmpty);
+			GUI.DrawTexture (new Rect (0, 0, 100* async.progress, 50), ProgressBarFull);
+		}
+	}
 
 	*/
 
@@ -28,6 +27,8 @@ public class Load : MonoBehaviour {
 	private Text loadingText;
 
 	AsyncOperation async = null;
+	public Texture ProgressBarEmpty;
+	public Texture ProgressBarFull;
 
 
 	void Start() {
@@ -59,12 +60,11 @@ public class Load : MonoBehaviour {
 
 		}
 
-         if (async != null) {
+         /*if (async != null) {
              GameObject.Find ("protagonista").transform.position = Vector3.MoveTowards(GameObject.Find ("protagonista").transform.position, new Vector3 (-528f + 975*async.progress, -309f, 58f), Time.deltaTime);
-         }
+         }*/
 
 	}
-
 
 	// The coroutine runs on its own at the same time as Update() and takes an integer indicating which scene to load.
 	IEnumerator LoadNewScene() {
