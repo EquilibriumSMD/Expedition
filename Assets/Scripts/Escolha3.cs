@@ -20,8 +20,9 @@ public class Escolha3 : MonoBehaviour {
 	
 	//===========VOIDS NORMAIS=========//
 	private void changeFase(int option3, string nomeCena){
-        Debug.Log("Opção escolhida"+option3);
-        
-		//SceneManager.LoadScene (nomeCena);
+		Debug.Log("Opção escolhida"+option3);
+
+		Menu.nextScene = nomeCena;
+		SceneManager.LoadScene ("Loading");
 	}
 }

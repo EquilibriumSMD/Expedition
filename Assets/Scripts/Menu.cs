@@ -22,6 +22,8 @@ public class Menu : MonoBehaviour {
  private string nomeDaCena;
  private float VOLUME;
 
+	public static string nextScene = "Scene1";
+
  void Awake(){
     DontDestroyOnLoad (transform.gameObject);
 	//fadeScr = GameObject.FindObjectOfType<SceneFading> ();

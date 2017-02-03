@@ -3,14 +3,36 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class Load : MonoBehaviour {
+	/*
+	IEnumerator LoadingLevel (int i) {
+         Async = Application.LoadLevelAsync (i);
+         yield return Async;
+     }
+ 
+ 
+     void OnGUI () {
+         if (Async != null) {
+             GUI.DrawTexture (new Rect (0, 0, 100, 50), ProgressBarEmpty);
+             GUI.DrawTexture (new Rect (0, 0, 100* Async.progress, 50), ProgressBarFull);
+         }
+     }
+
+	*/
+
 
 	private bool loadScene = false;
 
 	[SerializeField]
-	private int scene;
+	private string scene;
 	[SerializeField]
 	private Text loadingText;
 
+	AsyncOperation async = null;
+
+
+	void Start() {
+		scene = Menu.nextScene;
+	}
 
 	// Updates once per frame
 	void Update() {
@@ -37,6 +59,10 @@ public class Load : MonoBehaviour {
 
 		}
 
+         if (async != null) {
+             GameObject.Find ("protagonista").transform.position = Vector3.MoveTowards(GameObject.Find ("protagonista").transform.position, new Vector3 (-528f + 975*async.progress, -309f, 58f), Time.deltaTime);
+         }
+
 	}
 
 
@@ -48,11 +74,10 @@ public class Load : MonoBehaviour {
 		yield return new WaitForSeconds(1);
 
 		// Start an asynchronous operation to load the scene that was passed to the LoadNewScene coroutine.
-		AsyncOperation async = Application.LoadLevelAsync(scene);
+		async = Application.LoadLevelAsync(scene);
 
 		// While the asynchronous operation to load the new scene is not yet complete, continue waiting until it's done.
 		while (!async.isDone) {
-			GameObject.Find ("protagonista").transform.position = Vector3.MoveTowards(GameObject.Find ("protagonista").transform.position, new Vector3 (-528f + 975*async.progress, -309f, 58f), Time.deltaTime);
 			yield return null;
 		}
 
