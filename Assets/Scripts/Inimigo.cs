@@ -94,6 +94,7 @@ public class Inimigo : MonoBehaviour {
 
 	void FixedUpdate () 
 	{
+
 		// check if character is on ground
 		if (Physics.Raycast (transform.position + (Vector3.up * rayDistance), Vector3.down, rayDistance * 2)) 
 		{

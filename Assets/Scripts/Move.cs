@@ -72,15 +72,15 @@ public class Move : MonoBehaviour {
 			Jump ();
 			if (axis) {
 				if (Input.GetAxis ("Vertical") < 0) {
-					transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
+					transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 1.25f;
 				} else {
-					transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
+					transform.position += Vector3.left * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
 				}
 			} else {
 				if (Input.GetAxis ("Vertical") > 0) {
-					transform.position += Vector3.forward * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
+					transform.position += Vector3.forward * Input.GetAxis ("Horizontal") * Time.deltaTime * 1.25f;
 				} else {
-					transform.position += Vector3.forward * Input.GetAxis ("Horizontal") * Time.deltaTime * 5f;
+					transform.position += Vector3.forward * Input.GetAxis ("Horizontal") * Time.deltaTime * 2.5f;
 				}
 			}
 			if (Input.GetAxis ("Horizontal") > 0) {
